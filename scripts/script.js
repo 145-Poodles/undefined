@@ -1,10 +1,10 @@
 $(window).load(function() {
-    $('ul>li>a').mouseover(function() {
-        $(this).css('color', 'black');
-    });
-    $('ul>li>a').mouseleave(function() {
-        $(this).css('color', '#902634');
-    });
+    // $('ul>li>a').mouseover(function() {
+    //     $(this).css('color', 'black');
+    // });
+    // $('ul>li>a').mouseleave(function() {
+    //     $(this).css('color', '#902634');
+    // });
     $('.show').click(function() {
         $('header, main').animate({
             marginLeft: "+=300px"
@@ -55,16 +55,16 @@ $(window).load(function() {
         $('#box:nth-of-type(3)>span').fadeOut(160);
     });
     $('#box>img').click(function() {
-        $('body').append('<button class="toggle"></button>');
-        $('body').append('<img class="large" src="images/iphoneLarge.png">');
-        $('body').append('<div class="iphone-display-2"></div>');
-        $('#darkness').fadeIn(400);
+        $('#lightbox').append('<button class="toggle"></button>');
+        $('#lightbox').append('<img class="large" src="images/iphoneLarge.png">');
+        $('#lightbox').append('<div class="iphone-display-2"></div>');
+        $('#darkness, #lightbox').fadeIn(400);
         $('.toggle').click(function() {
-            $('body>div:last').toggleClass('iphone-display-2 iphone-display-1');
+            $('#lightbox>div:last').toggleClass('iphone-display-2 iphone-display-1');
         });
     });
     $('#darkness').click(function() {
-    	$('#darkness').fadeOut();
+    	$('#darkness, #lightbox').fadeOut();
         $('.large').fadeOut();
         $('.iphone-display-2').fadeOut();
         $('.iphone-display-1').fadeOut();

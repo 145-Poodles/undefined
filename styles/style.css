@@ -19,13 +19,82 @@ body {
   font-family: Sans-Narrow-Bold;
   src: url("../fonts/PT_Sans-Narrow-Web-Bold.ttf");
 }
+#main {
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+  width: 100%;
+  text-align: center;
+}
+#main #wrapper {
+  margin: 0 auto;
+  width: 750px;
+}
+#main h1 {
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 490px;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+#main p {
+  font-family: Sans-Narrow-Regular;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  word-spacing: 2px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+}
+#landing {
+  height: 489px;
+  text-align: center;
+}
+#landing img {
+  border-radius: 6px;
+  pointer-events: none;
+}
+#navbar {
+  margin: 0 auto;
+  width: 600px;
+  background: #912735;
+  border-radius: 5px;
+}
+#navbar ul {
+  margin: 0 0 50px 0;
+  padding: 10px 0;
+  text-align: center;
+}
+#navbar ul li {
+  display: inline-block;
+  margin: 0 15px;
+  list-style: none;
+}
+#navbar ul li a {
+  font-family: Sans-Narrow-Regular;
+  padding: 3px 20px 3px 20px;
+  text-decoration: none;
+  color: #fff;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  transition: all 0.4s ease;
+  border-radius: 3px;
+}
+#navbar ul li a:hover {
+  background: #fff;
+  color: #912735;
+}
+#navbar ul li:first-of-type a {
+  border: none;
+}
 #darkness {
   position: fixed;
   display: none;
   z-index: 999;
   width: 100%;
   height: 100vh;
-  background: rgba(0,0,0,0.8);
   text-align: center;
 }
 .large {
@@ -69,24 +138,38 @@ body {
 }
 .toggle {
   z-index: 1111;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: -757px;
   left: 0;
   right: 0;
-  bottom: 6%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50px;
-  height: 50px;
-  background: #912735;
+  margin: auto;
+  width: 61px;
+  height: 61px;
+  background: #f00;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  border: 4px solid #c23744;
+  border: 4px solid #444c50;
+}
+#lightbox {
+  display: none;
+  z-index: 1111;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+#lightbox button,
+img,
+div {
+  pointer-events: auto;
 }
 aside {
   position: fixed;
   left: -300px;
-  background-image: url("../images/tile.png");
+  background-image: url("../images/background.png");
   background-color: #912735;
   width: 300px;
   height: 100vh;
@@ -153,30 +236,39 @@ header {
   text-align: center;
 }
 header img {
-  width: 400px;
+  width: 370px;
+  pointer-events: none;
 }
 main {
-  padding: 30px 0 0 0;
   height: 400px;
 }
 main #wallpapers {
   text-align: center;
+  font-size: 14px;
 }
-main #wallpapers h2 {
-  font-family: RobotoCondensed-Bold;
-  margin: 15px 0;
-  color: #8d2130;
+main #wallpapers #box p {
+  font-size: 16px;
+}
+main #wallpapers h1 {
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 490px;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
   letter-spacing: 1px;
-  font-size: 24px;
-  text-transform: uppercase;
+  word-spacing: 2px;
 }
 main #wallpapers p {
   margin: 0 auto;
-  padding: 0 0 50px 0;
-  width: 600px;
+  padding: 15px 0 50px 0;
+  width: 700px;
+  font-family: Sans-Narrow-Regular;
+  line-height: 25px;
+  letter-spacing: 0.7px;
   word-spacing: 2px;
-  letter-spacing: 0.5px;
-  font-size: 15px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
 }
 main #wallpapers #box {
   position: relative;
@@ -233,9 +325,15 @@ main #wallpapers #box button {
   letter-spacing: 2px;
 }
 main #wallpapers #box button:hover {
-  background: #fff;
+  background: #eee;
   color: #8d2130;
 }
 button:focus {
   outline: 0;
+}
+::-moz-selection {
+  background: #ff0;
+}
+::selection {
+  background: #eee;
 }
