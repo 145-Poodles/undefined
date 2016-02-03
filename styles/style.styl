@@ -1,4 +1,5 @@
 body
+	position relative
 	font-family RobotoCondensed-Bold
 	margin 0
 	padding 0
@@ -17,13 +18,13 @@ body
 	src url("../fonts/PT_Sans-Narrow-Web-Bold.ttf")
 #main
 	margin 0 auto
-	padding 0 0 40px 0
+	padding 0 0 20px 0
 	width 100%
 	text-align center
 	// background #912735
 	#wrapper
 		margin 0 auto
-		width 750px
+		width 760px
 		// .divider
 		// 	margin 0 auto
 		// 	width 300px
@@ -34,7 +35,7 @@ body
 		width 490px
 		font-family Sans-Narrow-Regular
 		color #912735
-		letter-spacing 1px
+		letter-spacing 2px
 		word-spacing 2px
 	p
 		font-family Sans-Narrow-Regular
@@ -44,10 +45,21 @@ body
 		color black
 		font-size 17px
 		font-weight 600
+#main:last-of-type
+	background #912735
+	padding 20px 0 20px 0
+	#wrapper
+		width 800px
+	p, h1
+		color white
 #landing
-	height 489px
+	padding 40px 0 40px 0
 	text-align center
+	// background #912735
 	img
+		border 8px solid white
+		border-left 80px solid white
+		border-right 80px solid white
 		border-radius 6px
 		pointer-events none
 header
@@ -137,11 +149,20 @@ header
 	margin auto
 	width 61px
 	height 61px
-	background red
+	background #282D31
 	border none
 	border-radius 50%
 	cursor pointer
-	border 4px solid #444C50
+	border 4px solid white
+	transition all 0.3s ease
+	-webkit-box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
+	box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
+.flick
+	background white
+.toggle:hover
+	background white
+	border 4px solid #282D31
 #lightbox
 	display none
 	z-index 1111
@@ -152,52 +173,51 @@ header
 	pointer-events none
 #lightbox button, img, div
 	pointer-events auto
-	
-aside
-	position fixed
-	left -300px
-	background-image url("../images/background.png")
-	background-color #912735
-	width 300px
-	height 100%vh
-	-webkit-box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
-	-moz-box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
-	box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
-	#wrapper ul 
-		margin 0
-		padding 0 20px
-	#wrapper ul li
-		list-style none
-		text-align right
-	#wrapper ul li a
-		color #902634
-		text-decoration none
-		text-transform uppercase
-		font-size 27px
-		letter-spacing 4px
-		line-height 50px
-		background white
-		padding 2px 12px
-	footer
-		position absolute
-		width 280px
-		bottom 0
-		left 10px
-		text-align center
-	footer p
-		font-family Sans-Narrow-Regular
-		color #902634
-		font-size 14px
-		background white
-		padding 5px 15px
-	footer p a
-		margin 0 0 0 10px
-		text-decoration none
-		color #902634
-		border-bottom 1px solid #902634
-	footer p a:hover
-		color black
-		border-color black
+// aside
+// 	position fixed
+// 	left -300px
+// 	background-image url("../images/background.png")
+// 	background-color #912735
+// 	width 300px
+// 	height 100%vh
+// 	-webkit-box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
+// 	-moz-box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
+// 	box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
+// 	#wrapper ul 
+// 		margin 0
+// 		padding 0 20px
+// 	#wrapper ul li
+// 		list-style none
+// 		text-align right
+// 	#wrapper ul li a
+// 		color #902634
+// 		text-decoration none
+// 		text-transform uppercase
+// 		font-size 27px
+// 		letter-spacing 4px
+// 		line-height 50px
+// 		background white
+// 		padding 2px 12px
+// 	footer
+// 		position absolute
+// 		width 280px
+// 		bottom 0
+// 		left 10px
+// 		text-align center
+// 	footer p
+// 		font-family Sans-Narrow-Regular
+// 		color #902634
+// 		font-size 14px
+// 		background white
+// 		padding 5px 15px
+// 	footer p a
+// 		margin 0 0 0 10px
+// 		text-decoration none
+// 		color #902634
+// 		border-bottom 1px solid #902634
+// 	footer p a:hover
+// 		color black
+// 		border-color black
 .show, .hide
 	position fixed
 	cursor pointer
@@ -290,6 +310,22 @@ main #wallpapers
 		button:hover
 			background #EEEEEE;
 			color #8d2130
+footer
+	padding 0 0 20px 0
+	width 100%
+	background #912735
+	height 80px
+	text-align center
+	a
+		width 80px
+		height 80px
+	.fb
+		margin 0 auto
+		padding 15px 0 0 0
+		cursor pointer
+		transition all 0.3s ease
+	.fb:hover
+		opacity 0.3
 button:focus {
     outline: 0;
 }

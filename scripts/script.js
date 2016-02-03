@@ -62,6 +62,12 @@ $(window).load(function() {
         $('.toggle').click(function() {
             $('#lightbox>div:last').toggleClass('iphone-display-2 iphone-display-1');
         });
+        setTimeout(function() {
+        	$('.toggle').addClass('flick');
+        	setTimeout(function() {
+        		$('.toggle').removeClass('flick');
+        	}, 600)
+        }, 600)
     });
     $('#darkness').click(function() {
     	$('#darkness, #lightbox').fadeOut();
