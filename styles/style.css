@@ -138,7 +138,7 @@ aside footer p a:hover {
 }
 .show,
 .hide {
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   font-size: 30px;
   color: #000;
