@@ -123,7 +123,7 @@ header
 	margin auto
 	width 376px
 	height 676px
-	background-image url("../images/iphone-display-2.jpg")
+	background image-url("../images/iphone-display-2.jpg")
 	background-size cover
 	transition all 0.4s ease
 .iphone-display-1
@@ -136,7 +136,7 @@ header
 	margin auto
 	width 376px
 	height 676px
-	background-image url("../images/iphone-display-1.jpg")
+	background image-url("../images/iphone-display-1.jpg")
 	background-size cover
 	transition all 0.4s ease
 .toggle
@@ -310,7 +310,49 @@ main #wallpapers
 		button:hover
 			background #EEEEEE;
 			color #8d2130
+#gallery
+	margin 0 auto
+	width 1120px
+	#images
+		img {
+			display inline-block
+			width 220px
+		}
+	#content
+		margin 40px 0 40px 0
+		clear both
+		text-align center
+		// h1
+		// 	margin 40px 0 0 0
+		h1
+			margin 0 auto
+			padding 5px 0 30px 0
+			width 490px
+			font-family Sans-Narrow-Regular
+			color #912735
+			letter-spacing 2px
+			word-spacing 2px
+		#wrapper
+			margin 0 auto
+			width 1000px
+		#box
+			margin 20px 0
+			padding 0 27px
+			float left
+			width 440px
+			height 230px
+			p
+				font-family Sans-Narrow-Regular
+				line-height 25px
+				letter-spacing 0.7px
+				word-spacing 2px
+				color black
+				font-size 17px
+				font-weight 600
+		#box:last-of-type
+			border-left 4px solid #e4e4e4
 footer
+	clear both
 	padding 0 0 20px 0
 	width 100%
 	background #912735
