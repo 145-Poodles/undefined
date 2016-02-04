@@ -133,7 +133,7 @@ body {
   margin: auto;
   width: 376px;
   height: 676px;
-  background: url("../images/iphone-display-1.jpg");
+  background: url("../images/iphone-display-1.png");
   background-size: cover;
   transition: all 0.4s ease;
 }
@@ -147,7 +147,7 @@ body {
   margin: auto;
   width: 376px;
   height: 676px;
-  background: url("../images/iphone-display-2.jpg");
+  background: url("../images/iphone-display-2.png");
   background-size: cover;
   transition: all 0.4s ease;
 }
