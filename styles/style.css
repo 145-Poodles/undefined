@@ -52,9 +52,6 @@ body {
   background: #912735;
   padding: 20px 0 20px 0;
 }
-#main:last-of-type #wrapper {
-  width: 800px;
-}
 #main:last-of-type p,
 #main:last-of-type h1 {
   color: #fff;
@@ -64,10 +61,6 @@ body {
   text-align: center;
 }
 #landing img {
-  border: 8px solid #fff;
-  border-left: 80px solid #fff;
-  border-right: 80px solid #fff;
-  border-radius: 6px;
   pointer-events: none;
 }
 #navbar {
@@ -296,9 +289,6 @@ header img {
   width: 370px;
   pointer-events: none;
 }
-main {
-  height: 400px;
-}
 main #wallpapers {
   margin: 0 auto;
   width: 900px;
@@ -348,7 +338,7 @@ main #wallpapers #box span {
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 40%;
+  top: 33%;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
@@ -545,4 +535,143 @@ button:focus {
 }
 ::selection {
   background: #eee;
+}
+@media screen and (max-height: 880px) {
+  .large {
+    width: 350px;
+    height: 650px;
+  }
+  .iphone-display-1 {
+    width: 293px;
+    height: 523px;
+  }
+  .iphone-display-2 {
+    width: 293px;
+    height: 523px;
+  }
+  .xperia-display-1 {
+    top: 5px;
+    width: 308px;
+    height: 546px;
+  }
+  .xperia-display-2 {
+    top: 5px;
+    width: 308px;
+    height: 546px;
+  }
+  .galaxy-display-1 {
+    width: 317px;
+    height: 526px;
+    left: 1px;
+  }
+  .galaxy-display-2 {
+    width: 317px;
+    height: 526px;
+    left: 1px;
+  }
+  .toggle {
+    bottom: -580px;
+    width: 47px;
+    height: 46px;
+  }
+  .toggle2 {
+    bottom: -585px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  #gallery {
+    margin: 0 auto;
+    width: 800px;
+  }
+  #gallery > .wallpapers {
+    margin: 0 auto;
+    width: 670px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #landing > img {
+    width: 660px;
+  }
+}
+@media screen and (max-width: 920px) {
+  main > #wrapper {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  main > #wallpapers > p {
+    width: auto;
+  }
+  #gallery > .wallpapers {
+    margin: 0 auto;
+    width: 450px;
+  }
+  #gallery > .wallpapers > div:last-of-type {
+  }
+}
+@media screen and (max-width: 800px) {
+  #main > #wrapper {
+    width: 560px;
+  }
+  main > #wallpapers {
+    width: 560px;
+    text-align: center;
+  }
+  main > #wallpapers > #box {
+    width: auto;
+    float: none;
+  }
+  main > #wallpapers > #box > p {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  #gallery {
+    width: 500px;
+  }
+  #gallery > p {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #landing > img {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 650px) {
+  header > img {
+    margin: 0 0 10px 0;
+  }
+  header > #navbar {
+    width: 100%;
+    border-radius: 0px;
+  }
+  header > #navbar > ul {
+    padding: 0;
+  }
+  header > #navbar > ul > li:first-of-type {
+    border-top: 1px solid #a82837;
+  }
+  header > #navbar > ul > li {
+    display: block;
+    margin: 0;
+    cursor:  pointer;
+    border-bottom: 1px solid #a82837;
+  }
+  header > #navbar > ul > li:hover {
+    /*background: white*/
+  }
+  header > #navbar > ul > li > a {
+    display: block;
+    padding: 15px 0;
+  }
+  header > #navbar > ul > li > a:hover {
+  }
+  #main > #wrapper {
+    width: 460px;
+  }
+  main > #wallpapers {
+    width: 460px;
+  }
 }

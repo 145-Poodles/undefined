@@ -46,12 +46,12 @@ $(window).load(function() {
         $('.xperia-display-1').click(function() {
             $('#lightbox>div:last').toggleClass('.xperia-display-1 xperia-display-2');
         });
-        setTimeout(function() {
-            $('.xperia-display-1').addClass('screen-flick');
-            setTimeout(function() {
-                $('.xperia-display-1').removeClass('screen-flick');
-            }, 600)
-        }, 600)
+        // setTimeout(function() {
+        //     $('.xperia-display-1').addClass('screen-flick');
+        //     setTimeout(function() {
+        //         $('.xperia-display-1').removeClass('screen-flick');
+        //     }, 600)
+        // }, 600)
     });
     $('#box:nth-of-type(3)>img').click(function() {
         $('#lightbox').append('<button class="toggle2"></button>');
