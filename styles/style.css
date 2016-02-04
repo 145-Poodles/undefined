@@ -578,7 +578,7 @@ button:focus {
     bottom: -585px;
   }
 }
-@media screen and (max-device-width: 1145px) {
+@media screen and (max-width: 1145px) {
   #gallery {
     margin: 0 auto;
     width: 800px;
@@ -589,17 +589,17 @@ button:focus {
     text-align: center;
   }
 }
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1000px) {
   #landing > img {
     width: 660px;
   }
 }
-@media screen and (max-device-width: 920px) {
+@media screen and (max-width: 920px) {
   main > #wrapper {
     text-align: center;
   }
 }
-@media screen and (max-device-width: 850px) {
+@media screen and (max-width: 850px) {
   main > #wallpapers > p {
     width: auto;
   }
@@ -610,7 +610,7 @@ button:focus {
   #gallery > .wallpapers > div:last-of-type {
   }
 }
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 800px) {
   #main > #wrapper {
     width: 560px;
   }
@@ -626,7 +626,7 @@ button:focus {
     margin: 0 auto;
   }
 }
-@media screen and (max-device-width: 760px) {
+@media screen and (max-width: 760px) {
   #gallery {
     width: 500px;
   }
@@ -634,12 +634,12 @@ button:focus {
     width: 450px;
   }
 }
-@media screen and (max-device-width: 700px) {
+@media screen and (max-width: 700px) {
   #landing > img {
     width: 360px;
   }
 }
-@media screen and (max-device-width: 650px) {
+@media screen and (max-width: 650px) {
   header > img {
     margin: 0 0 10px 0;
   }
@@ -673,5 +673,157 @@ button:focus {
   }
   main > #wallpapers {
     width: 460px;
+  }
+}
+@media screen and (max-device-width: 1145px) {
+  #gallery {
+    margin: 0 auto;
+    width: 800px;
+  }
+  #gallery > .wallpapers {
+    margin: 0 auto;
+    width: 670px;
+    text-align: center;
+  }
+}
+@media screen and (max-device-width: 1000px) {
+  #landing > img {
+    width: 660px;
+  }
+}
+@media screen and (max-device-width: 920px) {
+  main > #wrapper {
+    text-align: center;
+  }
+}
+@media screen and (max-device-width: 850px) {
+  main > #wallpapers > p {
+    width: auto;
+  }
+}
+@media screen and (max-device-width: 800px) {
+  #main > #wrapper {
+    width: 560px;
+  }
+  main > #wallpapers {
+    width: 560px;
+    text-align: center;
+  }
+  main > #wallpapers > #box {
+    width: auto;
+    float: none;
+  }
+  main > #wallpapers > #box > p {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-device-width: 760px) {
+  #gallery {
+    width: 500px;
+  }
+  #gallery > p {
+    width: 450px;
+  }
+}
+@media screen and (max-device-width: 700px) {
+  #landing > img {
+    width: 360px;
+  }
+}
+@media screen and (max-device-width: 650px) {
+  .divider {
+    display: none;
+  }
+  header > img {
+    width: 700px;
+    margin: 0 0 10px 0;
+  }
+  header > #navbar {
+    width: 100%;
+    border-radius: 0px;
+  }
+  header > #navbar > ul {
+    padding: 0;
+  }
+  header > #navbar > ul > li:first-of-type {
+    border-top: 1px solid #a82837;
+  }
+  header > #navbar > ul > li {
+    display: block;
+    margin: 0;
+    cursor:  pointer;
+    border-bottom: 1px solid #a82837;
+  }
+  header > #navbar > ul > li:hover {
+    /*background: white*/
+  }
+  header > #navbar > ul > li > a {
+    display: block;
+    padding: 45px 0;
+    font-size: 40px;
+    letter-spacing: 8px;
+  }
+  header > #navbar > ul > li > a:hover {
+  }
+  #main > #wrapper {
+    width: 660px;
+  }
+  #main > #wrapper > .main-divider {
+    display: none;
+  }
+  #main > #wrapper > h1 {
+    font-size: 40px;
+  }
+  #main > #wrapper > p {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+  #landing > img {
+    width: 800px;
+  }
+  main > #wallpapers > h1 {
+    font-size: 60px;
+  }
+  main > #wallpapers > p {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  main > #wallpapers > #box {
+    margin: 40px 0 40px 0;
+    height: auto;
+  }
+  main > #wallpapers > #box > img {
+    width: 300px;
+  }
+  main > #wallpapers > #box > h2 {
+    font-size: 40px;
+  }
+  main > #wallpapers > #box > p {
+    font-size: 33px;
+  }
+  main > #wallpapers > #box > button {
+    margin: 20px 0;
+    padding: 25px 70px;
+    font-size: 50px;
+  }
+  #gallery {
+    width: 800px;
+  }
+  #gallery > h1 {
+    font-size: 40px;
+    width: auto;
+  }
+  #gallery > p {
+    width: auto;
+    font-size: 16px;
+    line-height: 50px;
+  }
+  #gallery > .wallpapers {
+    margin: 0 auto;
+    width: 750px;
+  }
+  #gallery > .wallpapers > div {
+    width: 220px;
   }
 }
