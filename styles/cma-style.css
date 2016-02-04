@@ -1,0 +1,17 @@
+body {
+	background: #4f5663;
+}
+header {
+	margin: 130px 0 0 370px
+}
+header > #navbar {
+	background: #02a194
+}
+body > img:first-of-type {
+	position:  absolute;
+	top: -130px;
+	width: 500px;
+}
+footer {
+	background: #e4e4e4;
+}

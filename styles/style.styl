@@ -3,7 +3,6 @@ body
 	font-family RobotoCondensed-Bold
 	margin 0
 	padding 0
-	// background #912735
 @font-face
 	font-family RobotoCondensed-Regular
 	src url("../fonts/RobotoCondensed-Regular.ttf")
@@ -21,14 +20,9 @@ body
 	padding 0 0 20px 0
 	width 100%
 	text-align center
-	// background #912735
 	#wrapper
 		margin 0 auto
 		width 760px
-		// .divider
-		// 	margin 0 auto
-		// 	width 300px
-		// 	height 2px
 	h1
 		margin 0 auto
 		padding 5px 0
@@ -55,18 +49,12 @@ body
 #landing
 	padding 40px 0 40px 0
 	text-align center
-	// background #912735
 	img
 		border 8px solid white
 		border-left 80px solid white
 		border-right 80px solid white
 		border-radius 6px
 		pointer-events none
-header
-	// width 100%
-	// background url('../images/XYZ.png')
-	// background-size 100%
-	// background-repeat no-repeat
 #navbar
 	margin 0 auto
 	width 600px
@@ -113,19 +101,6 @@ header
 	margin auto
 	width 450px
 	height 850px
-.iphone-display-2
-	z-index 1000
-	position fixed
-	top 0
-	bottom 0
-	left 0
-	right 0
-	margin auto
-	width 376px
-	height 676px
-	background image-url("../images/iphone-display-2.jpg")
-	background-size cover
-	transition all 0.4s ease
 .iphone-display-1
 	z-index 1000
 	position fixed
@@ -136,10 +111,75 @@ header
 	margin auto
 	width 376px
 	height 676px
-	background image-url("../images/iphone-display-1.jpg")
+	background url("../images/iphone-display-1.jpg")
 	background-size cover
 	transition all 0.4s ease
-.toggle
+.iphone-display-2
+	z-index 1000
+	position fixed
+	top 0
+	bottom 0
+	left 0
+	right 0
+	margin auto
+	width 376px
+	height 676px
+	background url("../images/iphone-display-2.jpg")
+	background-size cover
+	transition all 0.4s ease
+.xperia-display-1
+	z-index 1000
+	position fixed
+	top -7px
+	bottom 0
+	left -9px
+	right 0
+	margin auto
+	width 394px
+	height 686px
+	background url("../images/xperia-display-1.png")
+	background-size cover
+	transition all 0.4s ease
+.xperia-display-2
+	z-index 1000
+	position fixed
+	top -7px
+	bottom 0
+	left -9px
+	right 0
+	margin auto
+	width 394px
+	height 686px
+	background url("../images/xperia-display-2.png")
+	background-size cover
+	transition all 0.4s ease
+.galaxy-display-1
+	z-index 1000
+	position fixed
+	top 0
+	bottom 0
+	left 3px
+	right 0
+	margin auto
+	width 402px
+	height 686px
+	background url("../images/xperia-display-1.png")
+	background-size cover
+	transition all 0.4s ease
+.galaxy-display-2
+	z-index 1000
+	position fixed
+	top 0
+	bottom 0
+	left 3px
+	right 0
+	margin auto
+	width 402px
+	height 686px
+	background url("../images/xperia-display-2.png")
+	background-size cover
+	transition all 0.4s ease
+.toggle, .toggle2
 	z-index 1111
 	position fixed
 	top 0
@@ -157,7 +197,31 @@ header
 	transition all 0.3s ease
 	-webkit-box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
-	box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
+	box-shadow: 0px 0px 132px -27px rgba(0,0,0,1)
+.toggle2
+	z-index 1111
+	position fixed
+	top 0
+	bottom -761px
+	left 0
+	right 0
+	margin auto
+	width 104px
+	height 44px
+	background #282D31
+	border none
+	border-radius 34%
+	cursor pointer
+	border 4px solid white
+	transition all 0.3s ease
+	-webkit-box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 132px -27px rgba(0,0,0,1);
+	box-shadow: 0px 0px 132px -27px rgba(0,0,0,1)
+.toggle2:hover
+	background white
+	border none
+.screen-flick
+	opacity 0.2
 .flick
 	background white
 .toggle:hover
@@ -173,51 +237,6 @@ header
 	pointer-events none
 #lightbox button, img, div
 	pointer-events auto
-// aside
-// 	position fixed
-// 	left -300px
-// 	background-image url("../images/background.png")
-// 	background-color #912735
-// 	width 300px
-// 	height 100%vh
-// 	-webkit-box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
-// 	-moz-box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
-// 	box-shadow: 2px 0px 15px -4px rgba(0,0,0,0.67);
-// 	#wrapper ul 
-// 		margin 0
-// 		padding 0 20px
-// 	#wrapper ul li
-// 		list-style none
-// 		text-align right
-// 	#wrapper ul li a
-// 		color #902634
-// 		text-decoration none
-// 		text-transform uppercase
-// 		font-size 27px
-// 		letter-spacing 4px
-// 		line-height 50px
-// 		background white
-// 		padding 2px 12px
-// 	footer
-// 		position absolute
-// 		width 280px
-// 		bottom 0
-// 		left 10px
-// 		text-align center
-// 	footer p
-// 		font-family Sans-Narrow-Regular
-// 		color #902634
-// 		font-size 14px
-// 		background white
-// 		padding 5px 15px
-// 	footer p a
-// 		margin 0 0 0 10px
-// 		text-decoration none
-// 		color #902634
-// 		border-bottom 1px solid #902634
-// 	footer p a:hover
-// 		color black
-// 		border-color black
 .show, .hide
 	position fixed
 	cursor pointer
@@ -236,9 +255,9 @@ header img
 main 
 	height 400px
 main #wallpapers
+	margin 0 auto
+	width 900px
 	text-align center;
-	#box p
-		font-size 16px
 	h1
 		margin 0 auto
 		padding 5px 0
@@ -258,10 +277,11 @@ main #wallpapers
 		color black
 		font-size 18px
 		font-weight 600
-	font-size 14px
+	#box p
+		font-size 16px
 	#box
 		position relative
-		display inline-block
+		float left
 		width 300px
 		height 500px
 		img
@@ -308,66 +328,125 @@ main #wallpapers
 			cursor pointer
 			letter-spacing 2px
 		button:hover
-			background #EEEEEE;
+			background white;
 			color #8d2130
 #gallery
-	margin 0 auto
-	width 1120px
-	#images
-		img {
+	h1
+		margin 0 auto
+		padding 5px 0 5px 0
+		width 320px
+		font-family Sans-Narrow-Regular
+		color #912735
+		letter-spacing 2px
+		word-spacing 2px
+		text-align center
+		background white
+	p
+		font-family Sans-Narrow-Regular
+		margin 0 auto
+		padding 30px 0 40px 0
+		line-height 25px
+		letter-spacing 0.7px
+		word-spacing 2px
+		color black
+		font-size 17px
+		font-weight 600
+		text-align center
+		width 600px
+	p:last-of-type
+		padding 15px 0 60px 0
+	.wallpapers
+		position relative
+		margin 0 auto
+		padding 30px 0
+		width 1115px
+		div
 			display inline-block
 			width 220px
-		}
-	#content
-		margin 40px 0 40px 0
-		clear both
-		text-align center
-		// h1
-		// 	margin 40px 0 0 0
-		h1
-			margin 0 auto
-			padding 5px 0 30px 0
-			width 490px
-			font-family Sans-Narrow-Regular
-			color #912735
-			letter-spacing 2px
-			word-spacing 2px
-		#wrapper
-			margin 0 auto
-			width 1000px
-		#box
-			margin 20px 0
-			padding 0 27px
-			float left
-			width 440px
-			height 230px
-			p
-				font-family Sans-Narrow-Regular
-				line-height 25px
-				letter-spacing 0.7px
-				word-spacing 2px
-				color black
-				font-size 17px
-				font-weight 600
-		#box:last-of-type
-			border-left 4px solid #e4e4e4
+			height 165px
+			cursor pointer
+			transition all 0.3s ease
+		div:nth-of-type(1)
+			background url("../images/child-1-red.jpg")
+		div:nth-of-type(1):hover
+			background url("../images/child-1.jpg")
+		div:nth-of-type(2)
+			background url("../images/child-2-red.jpg")
+		div:nth-of-type(2):hover
+			background url("../images/child-2.jpg")
+		div:nth-of-type(3)
+			background url("../images/child-3-red.jpg")
+		div:nth-of-type(3):hover
+			background url("../images/child-3.jpg")
+		div:nth-of-type(4)
+			background url("../images/child-4-red.jpg")
+		div:nth-of-type(4):hover
+			background url("../images/child-4.jpg")
+		div:nth-of-type(5)
+			background url("../images/child-5-red.jpg")
+		div:nth-of-type(5):hover
+			background url("../images/child-5.jpg")
+		div:nth-of-type(6)
+			background url("../images/child-6-red.jpg")
+		div:nth-of-type(6):hover
+			background url("../images/child-6.jpg")
+		div:nth-of-type(7)
+			background url("../images/child-7-red.jpg")
+		div:nth-of-type(7):hover
+			background url("../images/child-7.jpg")
+		div:nth-of-type(8)
+			background url("../images/child-8-red.jpg")
+		div:nth-of-type(8):hover
+			background url("../images/child-8.jpg")
+		div:nth-of-type(9)
+			background url("../images/child-9-red.jpg")
+		div:nth-of-type(9):hover
+			background url("../images/child-9.jpg")
+		div:nth-of-type(10)
+			background url("../images/child-10-red.jpg")
+		div:nth-of-type(10):hover
+			background url("../images/child-10.jpg")
+#gallery:last-of-type #content #wrapper #box:first-of-type
+	margin 40px 0 20px 0
+#gallery:last-of-type #content #wrapper #box:last-of-type
+	margin 55px 0 20px 0
 footer
 	clear both
 	padding 0 0 20px 0
 	width 100%
 	background #912735
-	height 80px
+	height 70px
 	text-align center
 	a
 		width 80px
 		height 80px
 	.fb
 		margin 0 auto
-		padding 15px 0 0 0
+		padding 18px 0 0 0
 		cursor pointer
 		transition all 0.3s ease
 	.fb:hover
 		opacity 0.3
+.main-divider
+	margin 0 auto
+	width 300px
+	height 3px
+	background #912735
+.white-divider
+	margin 0 auto
+	width 200px
+	height 3px
+	background #e4e4e4
+.phone-divider
+	margin 0 auto
+	width 80px
+	height 3px
+	background #912735
+.divider
+	margin 0 auto
+	width 200px
+	height 3px
+	background #912735
 button:focus {
     outline: 0;
 }
