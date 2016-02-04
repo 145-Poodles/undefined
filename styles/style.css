@@ -826,4 +826,46 @@ button:focus {
   #gallery > .wallpapers > div {
     width: 220px;
   }
+  .large {
+    width: 650px;
+    height: 1150px;
+  }
+  .iphone-display-1 {
+    width: 576px;
+    height: 916px;
+  }
+  .iphone-display-2 {
+    width: 576px;
+    height: 916px;
+  }
+  .xperia-display-1 {
+    top: -11px;
+    width: 563px;
+    height: 930px;
+  }
+  .xperia-display-2 {
+    top: -11px;
+    width: 563px;
+    height: 930px;
+  }
+  .galaxy-display-1 {
+    left: 3px;
+    width: 577px;
+    height: 929px;
+  }
+  .galaxy-display-2 {
+    left: 3px;
+    width: 577px;
+    height: 929px;
+  }
+  .toggle {
+    bottom: -1026px;
+    width: 83px;
+    height: 80px;
+  }
+  .toggle2 {
+    bottom: -1028px;
+    width: 157px;
+    height: 63px;
+  }
 }
