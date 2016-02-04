@@ -578,7 +578,7 @@ button:focus {
     bottom: -585px;
   }
 }
-@media screen and (max-width: 1145px) {
+@media screen and (max-device-width: 1145px) {
   #gallery {
     margin: 0 auto;
     width: 800px;
@@ -589,17 +589,17 @@ button:focus {
     text-align: center;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-device-width: 1000px) {
   #landing > img {
     width: 660px;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-device-width: 920px) {
   main > #wrapper {
     text-align: center;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-device-width: 850px) {
   main > #wallpapers > p {
     width: auto;
   }
@@ -610,7 +610,7 @@ button:focus {
   #gallery > .wallpapers > div:last-of-type {
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-device-width: 800px) {
   #main > #wrapper {
     width: 560px;
   }
@@ -626,7 +626,7 @@ button:focus {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-device-width: 760px) {
   #gallery {
     width: 500px;
   }
@@ -634,12 +634,12 @@ button:focus {
     width: 450px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-device-width: 700px) {
   #landing > img {
     width: 360px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-device-width: 650px) {
   header > img {
     margin: 0 0 10px 0;
   }
