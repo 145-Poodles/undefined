@@ -817,6 +817,17 @@ button:focus {
   main > #wallpapers > #box > p {
     font-size: 33px;
   }
+  main > #wallpapers > #box > a:first-of-type > button {
+    margin: 25px 0 0 0;
+  }
+  main > #wallpapers > #box > a:last-of-type > button {
+    margin: 15px 0 0 0;
+  }
+  main > #wallpapers > #box > a > button {
+    margin: 10px 0;
+    padding: 15px 30px;
+    font-size: 40px;
+  }
   main > #wallpapers > #box > button {
     margin: 20px 0;
     padding: 25px 70px;
