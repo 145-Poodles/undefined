@@ -23,8 +23,9 @@ $(window).load(function() {
         $(this).css('opacity', '1');
         $('#box:nth-of-type(3)>span').fadeOut(160);
     });
+
     $('#box:nth-of-type(1)>img').click(function() {
-        $('#lightbox').hide('<button class="toggle2"></button>');
+        $('.toggle2').hide();
         $('#lightbox').append('<button class="toggle"></button>');
         $('#lightbox').append('<img class="large" src="images/iphone.png">');
         $('#lightbox').append('<div class="iphone-display-1"></div>');
@@ -40,6 +41,7 @@ $(window).load(function() {
         }, 600)
     });
     $('#box:nth-of-type(2)>img').click(function() {
+        $('.toggle2').hide();
         $('#lightbox').append('<img class="large" src="images/xperia-white.png">');
         $('#lightbox').append('<div class="xperia-display-1"></div>');
         $('#darkness, #lightbox').fadeIn(400);
@@ -75,4 +77,50 @@ $(window).load(function() {
         $('.iphone-display-1').fadeOut();
         $('.toggle').fadeOut();
     });
+    $('.wallpapers>div:nth-of-type(1)').click(function() {
+        $('#lightbox').append('<img src="images/child-display-1.jpg" />');
+        $('#darkness, #lightbox').fadeIn(400);
+    });
+    $('.wallpapers>div:nth-of-type(2)').click(function() {
+        $('#lightbox').append('<img src="images/child-display-2.jpg" />');
+        $('#darkness, #lightbox').fadeIn(400);
+    });
+    $('.wallpapers>div:nth-of-type(3)').click(function() {
+        $('#lightbox').append('<img src="images/child-display-3.jpg" />');
+        $('#darkness, #lightbox').fadeIn(400);
+    });
+        $('.wallpapers>div').click(function() {
+            $('#lightbox').empty();
+            $('#darkness, #lightbox').fadeIn(400);
+        });
+        $('.wallpapers>div:nth-of-type(1)').click(function() {
+            $('#lightbox').append('<img class="children" src="images/child-display-1.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(2)').click(function() {
+            $('#lightbox').append('<img class="children" src="images/child-display-2.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(3)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-3.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(4)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-4.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(5)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-5.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(6)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-6.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(7)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-7.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(8)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-8.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(9)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-9.jpg" />');
+        });
+        $('.wallpapers>div:nth-of-type(10)').click(function() {
+            $('#lightbox').append('<img class="children"  src="images/child-display-10.jpg" />');
+        });
 });
