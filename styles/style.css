@@ -489,6 +489,7 @@ main #wallpapers #box button:hover {
   left: 0;
   right: 0;
   margin: auto;
+  border-radius: 10px;
 }
 footer {
   clear: both;
