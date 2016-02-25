@@ -230,11 +230,11 @@ body {
   margin: auto;
   width: 104px;
   height: 44px;
-  background: #333945;
+  background: #282B34;
   border: none;
   border-radius: 34%;
   cursor: pointer;
-  border: 4px solid #464C58;
+  border: 2px solid #464C58;
   transition: all 0.3s ease;
   -webkit-box-shadow: 0px 0px 132px -27px #000;
   -moz-box-shadow: 0px 0px 132px -27px #000;
@@ -319,7 +319,8 @@ main #wallpapers #box p {
 }
 main #wallpapers #box {
   position: relative;
-  float: left;
+  display: inline-block;
+  margin: 0 auto;
   width: 300px;
   height: 530px;
 }
@@ -328,6 +329,9 @@ main #wallpapers #box img {
   width: 150px;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+main #wallpapers #box:last-of-type img {
+  width: 143px;
 }
 main #wallpapers #box span {
   font-family: Sans-Narrow-Regular;
@@ -587,6 +591,58 @@ button:focus {
     bottom: -585px;
   }
 }
+@media screen and (max-height: 595px) {
+  .large {
+    width: 280px;
+    height: 580px;
+  }
+  .iphone-display-1 {
+    width: 257px;
+    height: 455px;
+    bottom: -12px;
+  }
+  .iphone-display-2 {
+    width: 257px;
+    height: 455px;
+    bottom: -12px;
+  }
+  .xperia-display-1 {
+    top: 5px;
+    left: -3px;
+    width: 251px;
+    height: 479px;
+    background-position: center;
+  }
+  .xperia-display-2 {
+    top: 5px;
+    left: -3px;
+    width: 251px;
+    height: 479px;
+    background-position: center;
+  }
+  .galaxy-display-1 {
+    left: 1px;
+    width: 255px;
+    height: 471px;
+    background-position: center;
+  }
+  .galaxy-display-2 {
+    left: 1px;
+    width: 255px;
+    height: 471px;
+    background-position: center;
+  }
+  .toggle {
+    bottom: -523px;
+    width: 51px;
+    height: 48px;
+  }
+  .toggle2 {
+    bottom: -520px;
+    width: 81px;
+    height: 31px;
+  }
+}
 @media screen and (max-width: 1145px) {
   #gallery {
     margin: 0 auto;
@@ -721,7 +777,7 @@ button:focus {
     width: 560px;
   }
   main > #wallpapers {
-    width: 560px;
+    width: 640px;
     text-align: center;
   }
   main > #wallpapers > #box {
@@ -774,9 +830,9 @@ button:focus {
   }
   header > #navbar > ul > li > a {
     display: block;
-    padding: 45px 0;
-    font-size: 40px;
-    letter-spacing: 8px;
+    padding: 30px 0;
+    font-size: 36px;
+    letter-spacing: 4px;
   }
   header > #navbar > ul > li > a:hover {
   }
@@ -790,9 +846,10 @@ button:focus {
     font-size: 40px;
   }
   #main > #wrapper > p {
-    font-size: 15px;
-    line-height: 40px;
-    letter-spacing: 1px;
+    width: auto;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 100;
   }
   #landing > img {
     width: 800px;
@@ -801,17 +858,27 @@ button:focus {
     font-size: 60px;
   }
   main > #wallpapers > p {
-    font-size: 45px;
+    width: auto;
+    font-size: 43px;
     line-height: 50px;
+    font-weight: 100;
   }
   main > #wallpapers > #box {
-    margin: 40px 0 40px 0;
+    margin: 50px 0 50px 0;
+    height: auto;
+  }
+  main > #wallpapers > #box:last-of-type {
+    margin: 50px 0 70px 0;
     height: auto;
   }
   main > #wallpapers > #box > img {
     width: 300px;
   }
+  main #wallpapers #box:last-of-type img {
+    width: 300px;
+  }
   main > #wallpapers > #box > h2 {
+    margin: 15px 0;
     font-size: 40px;
   }
   main > #wallpapers > #box > p {
@@ -825,7 +892,7 @@ button:focus {
   }
   main > #wallpapers > #box > a > button {
     margin: 10px 0;
-    padding: 15px 30px;
+    padding: 5px 15px;
     font-size: 40px;
   }
   main > #wallpapers > #box > button {
@@ -844,6 +911,7 @@ button:focus {
     width: auto;
     font-size: 16px;
     line-height: 50px;
+    font-weight: 100;
   }
   #gallery > .wallpapers {
     margin: 0 auto;
