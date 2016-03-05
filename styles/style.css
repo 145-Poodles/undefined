@@ -319,8 +319,8 @@ main #wallpapers #box p {
 }
 main #wallpapers #box {
   position: relative;
-  display: inline-block;
   margin: 0 auto;
+  display: inline-block;
   width: 300px;
   height: 530px;
 }
@@ -379,10 +379,43 @@ main #wallpapers #box button:hover {
   background: #fff;
   color: #8d2130;
 }
+#gallery h3 {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Sans-Narrow-Bold;
+  color: #912735;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  background: #fff;
+  font-weight: bold;
+}
 #gallery h1 {
   margin: 0 auto;
-  padding: 5px 0 5px 0;
+  padding: 0px 0 5px 0;
   width: 320px;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+  background: #fff;
+}
+#gallery h1:nth-of-type(2) {
+  margin: 0 auto;
+  padding: 0px 0 5px 0;
+  width: 520px;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+  background: #fff;
+}
+#gallery h1:nth-of-type(4) {
+  margin: 0 auto;
+  padding: 0px 0 5px 0;
+  width: 700px;
   font-family: Sans-Narrow-Regular;
   color: #912735;
   letter-spacing: 2px;
@@ -393,7 +426,7 @@ main #wallpapers #box button:hover {
 #gallery p {
   font-family: Sans-Narrow-Regular;
   margin: 0 auto;
-  padding: 30px 0 40px 0;
+  padding: 30px 0 60px 0;
   line-height: 25px;
   letter-spacing: 0.7px;
   word-spacing: 2px;
@@ -404,7 +437,7 @@ main #wallpapers #box button:hover {
   width: 600px;
 }
 #gallery p:last-of-type {
-  padding: 15px 0 60px 0;
+  padding: 25px 0 30px 0;
 }
 #gallery .wallpapers {
   position: relative;
@@ -412,12 +445,57 @@ main #wallpapers #box button:hover {
   padding: 30px 0;
   width: 1115px;
 }
+#gallery .team {
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0 60px 0;
+  width: 870px;
+}
+#gallery .team div {
+  display: inline-block;
+  width: 130px;
+  margin: 0 20px;
+  text-align: center;
+}
+#gallery .team div img {
+  width: 140px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
 #gallery .wallpapers div {
   display: inline-block;
   width: 220px;
   height: 165px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.logo {
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+}
+.logo > p {
+  display: inline-block;
+  margin: 125px 45px 0 0;
+  padding: 10px;
+  font-family: Sans-Narrow-Regular;
+  font-size: 27px;
+  color: white;
+  background: #912735;
+  border-radius: 5px;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  word-spacing: 2px;
+  font-weight: 600;
+  text-align: center;
+}
+.logo > img {
+  position: absolute;
+  width: 250px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 #gallery .wallpapers div:nth-of-type(1) {
   background: url("../images/child-1-red.jpg");
@@ -549,6 +627,12 @@ button:focus {
 ::selection {
   background: #eee;
 }
+#gallery .team div .divider {
+  display: none;
+  margin: 0 auto;
+  width: 60px;
+  height: 3px;
+}
 @media screen and (max-height: 880px) {
   .large {
     width: 350px;
@@ -661,6 +745,49 @@ button:focus {
   .children {
     width: 650px;
   }
+  #gallery .team {
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    width: 400px;
+  }
+  #gallery .team div:first-of-type {
+    margin: 0 20px 30px 20px;
+  }
+  #gallery .team div {
+    text-align: center;
+    display: block;
+    margin: 30px 20px;
+    width: 350px;
+    height: 146px;
+  }
+  #gallery .team div img {
+    margin: 0 auto;
+    width: 110px;
+    border-radius: 50%;
+    padding: 5px 0;
+  }
+  #gallery h3 {
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 200px;
+    font-family: Sans-Narrow-Bold;
+    color: #912735;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #gallery .team div .divider {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+  }
+  #gallery .team div h3 br {
+    display: none;
+  }
 }
 @media screen and (max-width: 920px) {
   main > #wrapper {
@@ -697,6 +824,17 @@ button:focus {
 @media screen and (max-width: 760px) {
   #gallery {
     width: 500px;
+  }
+  #gallery h1:nth-of-type(4) {
+    margin: 0 auto;
+    padding: 0px 0 5px 0;
+    width: 520px;
+    font-family: Sans-Narrow-Regular;
+    color: #912735;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+    background: #fff;
   }
   #gallery > p {
     width: 450px;
@@ -760,6 +898,78 @@ button:focus {
 @media screen and (max-device-width: 1000px) {
   #landing > img {
     width: 660px;
+  }
+  #gallery .team {
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 600px;
+    height: 100%;
+  }
+  #gallery .team div:first-of-type {
+    margin: 0 20px 100px 20px;
+  }
+  #gallery .team div {
+    display: block;
+    margin: 50px 45px;
+    width: 350px;
+    height: 246px;
+  }
+  #gallery .team div img {
+    margin: 0 auto;
+    width: 250px;
+    border-radius: 50%;
+    padding: 5px 0;
+  }
+  #gallery h3 {
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 200px;
+    font-family: Sans-Narrow-Bold;
+    color: #912735;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  #gallery .team div .divider {
+    display: none;
+  }
+  #gallery .team div h3 br {
+    display: none;
+  }
+  .logo {
+    height: 770px;
+  }
+  .logo > img {
+    position: absolute;
+    width: 740px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #gallery .team div:nth-of-type(1) {
+    margin: 0 auto;
+    width: 250px;
+    height: 340px;
+  }
+  #gallery .team div:nth-of-type(2) {
+    display: inline-block;
+    width: 200px;
+  }
+  #gallery .team div:nth-of-type(3) {
+    display: inline-block;
+    width: 200px;
+  }
+  #gallery .team div:nth-of-type(4) {
+    display: inline-block;
+    width: 200px;
+  }
+  #gallery .team div:nth-of-type(5) {
+    display: inline-block;
+    width: 200px;
   }
 }
 @media screen and (max-device-width: 920px) {
@@ -903,7 +1113,15 @@ button:focus {
   #gallery {
     width: 800px;
   }
-  #gallery > h1 {
+  #gallery > h1:nth-of-type(1) {
+    font-size: 40px;
+    width: auto;
+  }
+  #gallery > h1:nth-of-type(2) {
+    font-size: 40px;
+    width: auto;
+  }
+  #gallery > h1:nth-of-type(3) {
     font-size: 40px;
     width: auto;
   }
