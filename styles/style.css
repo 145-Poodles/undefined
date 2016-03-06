@@ -918,20 +918,19 @@ button:focus {
   }
   #gallery .team div img {
     margin: 0 auto;
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
     padding: 5px 0;
   }
   #gallery h3 {
     margin: 0 auto;
-    padding: 5px 0;
-    width: 200px;
+    width: 295px;
     font-family: Sans-Narrow-Bold;
     color: #912735;
     letter-spacing: 1px;
     word-spacing: 2px;
     background: #fff;
-    font-size: 47px;
+    font-size: 55px;
   }
   #gallery .team div .divider {
     display: none;
@@ -953,7 +952,7 @@ button:focus {
   #gallery .team div:nth-of-type(1) {
     margin: 0 auto;
     width: 250px;
-    height: 380px;
+    height: 440px;
   }
   #gallery .team div:nth-of-type(2) {
     display: inline-block;
@@ -1140,28 +1139,26 @@ button:focus {
     width: 800px;
   }
   #gallery > h1:nth-of-type(1) {
-    font-size: 71px;
+    font-size: 81px;
     width: auto;
   }
   #gallery > h1:nth-of-type(2) {
-    font-size: 71px;
+    font-size: 81px;
     width: auto;
   }
   #gallery > h1:nth-of-type(3) {
-    font-size: 71px;
+    font-size: 81px;
     width: auto;
   }
   #gallery > h1:nth-of-type(4) {
-    font-size: 71px;
+    font-size: 81px;
     width: auto;
   }
   #gallery > p {
     font-family: RobotoCondensed-Regular;
-    line-height: 58px;
-    letter-spacing: 0.7px;
-    word-spacing: 2px;
+    line-height: 59px;
     color: black;
-    font-size: 28px;
+    font-size: 37px;
     width: auto;
     font-weight: none;
   }
