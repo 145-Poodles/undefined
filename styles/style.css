@@ -1019,20 +1019,20 @@ button:focus {
     width: 360px;
   }
   #main:first-of-type #wrapper p {
-    font-family: Sans-Narrow-Regular;
+    font-family: RobotoCondensed-Regular;
     line-height: 50px;
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: #000;
-    font-size: 35px;
+    font-size: 31px;
   }
   #main:last-of-type #wrapper p {
-    font-family: Sans-Narrow-Regular;
+    font-family: RobotoCondensed-Regular;
     line-height: 50px;
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: white;
-    font-size: 35px;
+    font-size: 31px;
   }
 }
 @media screen and (max-device-width: 650px) {
