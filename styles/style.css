@@ -35,8 +35,8 @@ body {
 }
 #main h1 {
   margin: 0 auto;
-  padding: 5px 0;
-  width: 490px;
+  padding: 10px 0;
+  width: 499px;
   font-family: Sans-Narrow-Regular;
   color: #912735;
   letter-spacing: 2px;
@@ -298,8 +298,8 @@ main #wallpapers {
 }
 main #wallpapers h1 {
   margin: 0 auto;
-  padding: 5px 0;
-  width: 490px;
+  padding: 10px 0;
+  width: 499px;
   font-family: Sans-Narrow-Regular;
   color: #912735;
   letter-spacing: 1px;
@@ -315,7 +315,6 @@ main #wallpapers p {
   word-spacing: 2px;
   color: #000;
   font-size: 18px;
-  font-weight: 600;
 }
 main #wallpapers #box p {
   font-size: 16px;
@@ -435,7 +434,6 @@ main #wallpapers #box button:hover {
   word-spacing: 2px;
   color: #000;
   font-size: 17px;
-  font-weight: 600;
   text-align: center;
   width: 600px;
 }
@@ -933,8 +931,7 @@ button:focus {
     letter-spacing: 1px;
     word-spacing: 2px;
     background: #fff;
-    font-weight: bold;
-    font-size: 40px;
+    font-size: 47px;
   }
   #gallery .team div .divider {
     display: none;
@@ -956,7 +953,7 @@ button:focus {
   #gallery .team div:nth-of-type(1) {
     margin: 0 auto;
     width: 250px;
-    height: 340px;
+    height: 380px;
   }
   #gallery .team div:nth-of-type(2) {
     display: inline-block;
@@ -990,7 +987,7 @@ button:focus {
     width: 560px;
   }
   main > #wallpapers {
-    width: 640px;
+    width: 656px;
     text-align: center;
   }
   main > #wallpapers > #box {
@@ -1018,6 +1015,9 @@ button:focus {
   #landing > img {
     width: 360px;
   }
+  #main #wrapper h1 {
+    font-size: 61px;
+  }
   #main:first-of-type #wrapper p {
     font-family: RobotoCondensed-Regular;
     line-height: 50px;
@@ -1033,6 +1033,19 @@ button:focus {
     word-spacing: 2px;
     color: white;
     font-size: 31px;
+  }
+  main > #wallpapers > h1 {
+    font-size: 71px;
+  }
+  main > #wallpapers > p {
+    font-family: RobotoCondensed-Regular;
+    line-height: 58px;
+    letter-spacing: 0.7px;
+    word-spacing: 2px;
+    color: black;
+    font-size: 49px;
+    width: auto;
+    font-weight: none;
   }
 }
 @media screen and (max-device-width: 650px) {
@@ -1076,9 +1089,6 @@ button:focus {
   #main > #wrapper > .main-divider {
     display: none;
   }
-  #main > #wrapper > h1 {
-    font-size: 40px;
-  }
   #main > #wrapper > p {
     width: auto;
     font-size: 16px;
@@ -1087,15 +1097,6 @@ button:focus {
   }
   #landing > img {
     width: 800px;
-  }
-  main > #wallpapers > h1 {
-    font-size: 60px;
-  }
-  main > #wallpapers > p {
-    width: auto;
-    font-size: 43px;
-    line-height: 50px;
-    font-weight: 100;
   }
   main > #wallpapers > #box {
     margin: 50px 10px 50px 0;
@@ -1113,10 +1114,11 @@ button:focus {
   }
   main > #wallpapers > #box > h2 {
     margin: 15px 0;
-    font-size: 40px;
+    font-size: 50px;
   }
   main > #wallpapers > #box > p {
-    font-size: 33px;
+    font-size: 46px;
+    line-height: 55px;
   }
   main > #wallpapers > #box > a:first-of-type > button {
     margin: 25px 0 0 0;
@@ -1126,8 +1128,8 @@ button:focus {
   }
   main > #wallpapers > #box > a > button {
     margin: 10px 0;
-    padding: 5px 15px;
-    font-size: 40px;
+    padding: 5px 10px;
+    font-size: 44px;
   }
   main > #wallpapers > #box > button {
     margin: 20px 0;
@@ -1138,22 +1140,30 @@ button:focus {
     width: 800px;
   }
   #gallery > h1:nth-of-type(1) {
-    font-size: 40px;
+    font-size: 71px;
     width: auto;
   }
   #gallery > h1:nth-of-type(2) {
-    font-size: 40px;
+    font-size: 71px;
     width: auto;
   }
   #gallery > h1:nth-of-type(3) {
-    font-size: 40px;
+    font-size: 71px;
+    width: auto;
+  }
+  #gallery > h1:nth-of-type(4) {
+    font-size: 71px;
     width: auto;
   }
   #gallery > p {
+    font-family: RobotoCondensed-Regular;
+    line-height: 58px;
+    letter-spacing: 0.7px;
+    word-spacing: 2px;
+    color: black;
+    font-size: 28px;
     width: auto;
-    font-size: 16px;
-    line-height: 50px;
-    font-weight: 100;
+    font-weight: none;
   }
   #gallery > .wallpapers {
     margin: 0 auto;
