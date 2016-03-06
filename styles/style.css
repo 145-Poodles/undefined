@@ -1020,21 +1020,19 @@ button:focus {
   }
   #main:first-of-type #wrapper p {
     font-family: Sans-Narrow-Regular;
-    line-height: 25px;
+    line-height: 50px;
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: #000;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 35px;
   }
   #main:last-of-type #wrapper p {
     font-family: Sans-Narrow-Regular;
-    line-height: 25px;
+    line-height: 50px;
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: white;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 35px;
   }
 }
 @media screen and (max-device-width: 650px) {
