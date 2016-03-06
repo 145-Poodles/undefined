@@ -904,7 +904,7 @@ button:focus {
     position: relative;
     margin: 0 auto;
     padding: 50px 0;
-    width: 600px;
+    width: 690px;
     height: 100%;
   }
   #gallery .team div:first-of-type {
@@ -957,19 +957,19 @@ button:focus {
   }
   #gallery .team div:nth-of-type(2) {
     display: inline-block;
-    width: 200px;
+    width: 250px;
   }
   #gallery .team div:nth-of-type(3) {
     display: inline-block;
-    width: 200px;
+    width: 250px;
   }
   #gallery .team div:nth-of-type(4) {
     display: inline-block;
-    width: 200px;
+    width: 250px;
   }
   #gallery .team div:nth-of-type(5) {
     display: inline-block;
-    width: 200px;
+    width: 250px;
   }
 }
 @media screen and (max-device-width: 920px) {
@@ -1020,11 +1020,11 @@ button:focus {
   }
   #main:first-of-type #wrapper p {
     font-family: RobotoCondensed-Regular;
-    line-height: 50px;
+    line-height: 53px;
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: #000;
-    font-size: 31px;
+    font-size: 27px;
   }
   #main:last-of-type #wrapper p {
     font-family: RobotoCondensed-Regular;
@@ -1084,7 +1084,7 @@ button:focus {
   header > #navbar > ul > li > a:hover {
   }
   #main > #wrapper {
-    width: 660px;
+    width: 740px;
   }
   #main > #wrapper > .main-divider {
     display: none;
@@ -1161,7 +1161,7 @@ button:focus {
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: black;
-    font-size: 28px;
+    font-size: 21px;
     width: auto;
     font-weight: none;
   }
