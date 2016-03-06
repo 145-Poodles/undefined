@@ -469,6 +469,14 @@ main #wallpapers #box button:hover {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+#images {
+  display: none;
+  width: 100%;
+}
+#images img {
+  display: block;
+  width: 100%;
+}
 .logo {
   margin: 0 auto;
   width: 500px;
@@ -1135,7 +1143,7 @@ button:focus {
     font-size: 50px;
   }
   #gallery {
-    width: 800px;
+    width: 100%;
   }
   #gallery > h1:nth-of-type(1) {
     font-size: 81px;
@@ -1158,7 +1166,7 @@ button:focus {
     line-height: 59px;
     color: black;
     font-size: 37px;
-    width: auto;
+    width: 800px;
     font-weight: none;
   }
   #gallery > .wallpapers {
@@ -1208,5 +1216,11 @@ button:focus {
      bottom: -1028px;
      width: 157px;
      height: 63px;
+   }
+   .wallpapers {
+    display: none;
+   }
+   #images {
+    display: block;
    }
 }
