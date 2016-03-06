@@ -1,5 +1,5 @@
 html {
-  -webkit-text-size-adjust: 120%;
+  -webkit-text-size-adjust: 100%;
 }
 body {
   position: relative;
@@ -1014,6 +1014,29 @@ button:focus {
     width: 360px;
   }
 }
+@media screen and (max-device-width: 450px) {
+  #landing > img {
+    width: 360px;
+  }
+  #main:first-of-type #wrapper p {
+    font-family: Sans-Narrow-Regular;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    word-spacing: 2px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  #main:last-of-type #wrapper p {
+    font-family: Sans-Narrow-Regular;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    word-spacing: 2px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
 @media screen and (max-device-width: 650px) {
   .divider {
     display: none;
@@ -1077,11 +1100,11 @@ button:focus {
     font-weight: 100;
   }
   main > #wallpapers > #box {
-    margin: 50px 0 50px 0;
+    margin: 50px 10px 50px 0;
     height: auto;
   }
   main > #wallpapers > #box:last-of-type {
-    margin: 50px 0 70px 0;
+    margin: 50px 0 70px 22px;
     height: auto;
   }
   main > #wallpapers > #box > img {
