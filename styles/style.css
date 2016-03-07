@@ -426,6 +426,7 @@ main #wallpapers #box button:hover {
   background: #fff;
 }
 #gallery p {
+  position: relative;
   font-family: Sans-Narrow-Regular;
   margin: 0 auto;
   padding: 30px 0 20px 0;
@@ -439,6 +440,18 @@ main #wallpapers #box button:hover {
 }
 #gallery p:last-of-type {
   padding: 25px 0 40px 0;
+}
+#gallery .class-first {
+  /*display: none;*/
+}
+#gallery .class-second {
+  /*display: none;*/
+}
+#gallery .class-third {
+  display: none;
+}
+#gallery .class-fourth {
+  display: none;
 }
 #gallery .wallpapers {
   position: relative;
@@ -461,9 +474,25 @@ main #wallpapers #box button:hover {
   text-align: center;
 }
 #gallery .team div img {
+  position: relative;
+  top: -100px;
   width: 140px;
   border-radius: 50%;
   margin: 15px 0;
+}
+#gallery .team div:nth-of-type(2) img {
+  position: relative;
+  top: 100px;
+  width: 140px;
+  border-radius: 50%;
+  /*margin: 15px 0;*/
+}
+#gallery .team div:nth-of-type(4) img {
+  position: relative;
+  top: 100px;
+  width: 140px;
+  border-radius: 50%;
+  /*margin: 15px 0;*/
 }
 #gallery .wallpapers div {
   display: inline-block;
@@ -482,6 +511,7 @@ main #wallpapers #box button:hover {
   width: 100%;
 }
 .logo {
+  display: none;
   margin: 0 auto;
   width: 500px;
   height: 300px;
@@ -903,6 +933,18 @@ button:focus {
   }
 }
 @media screen and (max-device-width: 1145px) {
+  #gallery .team div:nth-of-type(2) img {
+    /*position: relative;*/
+    top: 100px;
+    width: 300px;
+    border-radius: 50%;
+  }
+  #gallery .team div:nth-of-type(4) img {
+    /*position: relative;*/
+    top: 100px;
+    width: 300px;
+    border-radius: 50%;
+  }
   #gallery {
     margin: 0 auto;
     width: 800px;
@@ -938,6 +980,26 @@ button:focus {
     width: 300px;
     border-radius: 50%;
     padding: 5px 0;
+  }
+  #gallery .team div:nth-of-type(2) h3 {
+    margin: 0 auto;
+    width: 295px;
+    font-family: Sans-Narrow-Bold;
+    color: #912735;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background: #fff;
+    font-size: 55px;
+  }
+  #gallery .team div:nth-of-type(4) h3 {
+    margin: 0 auto;
+    width: 295px;
+    font-family: Sans-Narrow-Bold;
+    color: #912735;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background: #fff;
+    font-size: 55px;
   }
   #gallery h3 {
     margin: 0 auto;
@@ -1242,6 +1304,7 @@ button:focus {
    }
 }
 #loading-screen {
+  z-index: 2000;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1250,8 +1313,11 @@ button:focus {
 }
 #loading-screen #loading-img {
   position: fixed;
-  top: 45%;
+  top: 33%;
   width: 100%;
   height: 50%;
   text-align: center;
+}
+#loading-screen #loading-img img {
+  width: 300px;
 }

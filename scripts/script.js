@@ -1,11 +1,52 @@
 $(window).load(function() {
-    $('.team>div:nth-child(1)').fadeIn(500);
-    $('.team>div:nth-child(2)').fadeIn(1000);
-    $('.team>div:nth-child(3)').fadeIn(1500);
-    $('.team>div:nth-child(4)').fadeIn(2000);
-    $('.team>div:nth-child(5)').fadeIn(2500);
+    var bodyHeight = document.getElementById("body");
+    var height = bodyHeight.clientHeight;
+    // var windowHeight = $(window).height();
+    // var w = $(window);
+    // var p = $('.first');
+    // var offset = w.offset();
+    // console.log(offset.left);
+    // console.log(offset.top);
+    // console.log(offset);
+    // console.log(windowHeight);
+    // if (window)
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= height + 150) {
+            console.log(height);
+            $('.class-third').fadeIn(1000);
+        }
+        if ($(this).scrollTop() >= height + 472) {
+            console.log(height);
+            $('.class-fourth, .logo').fadeIn(1000);
+        }
+    });
+    setTimeout(function() {
+        $('.team>div:nth-child(1)').fadeIn(1000);
+        $('.team>div:nth-child(2)').fadeIn(1000);
+        $('.team>div:nth-child(3)').fadeIn(1000);
+        $('.team>div:nth-child(4)').fadeIn(1000);
+        $('.team>div:nth-child(5)').fadeIn(1000);
+        $('.team>div:nth-child(1)>img').animate({
+            top: "+=100"
+        }, 1150);
+        $('.team>div:nth-child(2)>img').animate({
+            top: "-=100"
+        }, 1150);
+        $('.team>div:nth-child(3)>img').animate({
+            top: "+=100"
+        }, 1150);
+        $('.team>div:nth-child(4)>img').animate({
+            top: "-=100"
+        }, 1150);
+        $('.team>div:nth-child(5)>img').animate({
+            top: "+=100"
+        }, 1150);
+        $('.class-first, .class-second').fadeIn(1000);
+        $('#loading-screen').fadeOut();
+    }, 400);
+    // $('.class-first').fadeIn(600).css('visibility', 'visible');
+    // $('.class-second').fadeIn(600).css('visibility', 'visible');
     $('body').fadeIn();
-    $('#loading-screen').fadeOut();
 
     $('#box:nth-of-type(1)>img').mouseenter(function() {
         $(this).css('opacity', '0.6');
@@ -97,38 +138,38 @@ $(window).load(function() {
         $('#lightbox').append('<img src="images/child-display-3.jpg" />');
         $('#darkness, #lightbox').fadeIn(400);
     });
-        $('.wallpapers>div').click(function() {
-            $('#lightbox').empty();
-            $('#darkness, #lightbox').fadeIn(400);
-        });
-        $('.wallpapers>div:nth-of-type(1)').click(function() {
-            $('#lightbox').append('<img class="children" src="images/child-display-1.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(2)').click(function() {
-            $('#lightbox').append('<img class="children" src="images/child-display-2.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(3)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-3.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(4)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-4.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(5)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-5.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(6)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-6.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(7)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-7.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(8)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-8.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(9)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-9.jpg" />');
-        });
-        $('.wallpapers>div:nth-of-type(10)').click(function() {
-            $('#lightbox').append('<img class="children"  src="images/child-display-10.jpg" />');
-        });
+    $('.wallpapers>div').click(function() {
+        $('#lightbox').empty();
+        $('#darkness, #lightbox').fadeIn(400);
+    });
+    $('.wallpapers>div:nth-of-type(1)').click(function() {
+        $('#lightbox').append('<img class="children" src="images/child-display-1.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(2)').click(function() {
+        $('#lightbox').append('<img class="children" src="images/child-display-2.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(3)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-3.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(4)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-4.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(5)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-5.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(6)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-6.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(7)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-7.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(8)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-8.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(9)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-9.jpg" />');
+    });
+    $('.wallpapers>div:nth-of-type(10)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/child-display-10.jpg" />');
+    });
 });
