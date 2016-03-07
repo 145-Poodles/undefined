@@ -1,4 +1,12 @@
 $(window).load(function() {
+    $('.team>div:nth-child(1)').fadeIn(500);
+    $('.team>div:nth-child(2)').fadeIn(1000);
+    $('.team>div:nth-child(3)').fadeIn(1500);
+    $('.team>div:nth-child(4)').fadeIn(2000);
+    $('.team>div:nth-child(5)').fadeIn(2500);
+    $('body').fadeIn();
+    $('#loading-screen').fadeOut();
+
     $('#box:nth-of-type(1)>img').mouseenter(function() {
         $(this).css('opacity', '0.6');
         $('#box:nth-of-type(1)>span').fadeIn(400);

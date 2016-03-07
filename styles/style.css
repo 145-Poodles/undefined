@@ -2,6 +2,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  display: none;
   position: relative;
   font-family: RobotoCondensed-Bold;
   margin: 0;
@@ -36,7 +37,7 @@ body {
 #main h1 {
   margin: 0 auto;
   padding: 10px 0;
-  width: 570px;
+  width: 100%;
   font-family: Sans-Narrow-Regular;
   color: #912735;
   letter-spacing: 2px;
@@ -427,7 +428,7 @@ main #wallpapers #box button:hover {
 #gallery p {
   font-family: Sans-Narrow-Regular;
   margin: 0 auto;
-  padding: 30px 0 60px 0;
+  padding: 30px 0 20px 0;
   line-height: 25px;
   letter-spacing: 0.7px;
   word-spacing: 2px;
@@ -437,7 +438,7 @@ main #wallpapers #box button:hover {
   width: 600px;
 }
 #gallery p:last-of-type {
-  padding: 25px 0 30px 0;
+  padding: 25px 0 40px 0;
 }
 #gallery .wallpapers {
   position: relative;
@@ -449,11 +450,13 @@ main #wallpapers #box button:hover {
   position: relative;
   margin: 0 auto;
   padding: 50px 0 60px 0;
-  width: 870px;
+  width: 900px;
+  height: 170px;
 }
 #gallery .team div {
-  display: inline-block;
-  width: 130px;
+  display: none;
+  float: left;
+  width: 140px;
   margin: 0 20px;
   text-align: center;
 }
@@ -470,6 +473,7 @@ main #wallpapers #box button:hover {
   transition: all 0.3s ease;
 }
 #images {
+  position: relative;
   display: none;
   width: 100%;
 }
@@ -745,8 +749,6 @@ button:focus {
     width: 670px;
     text-align: center;
   }
-}
-@media screen and (max-width: 1000px) {
   #landing > img {
     width: 660px;
   }
@@ -763,6 +765,7 @@ button:focus {
     margin: 0 20px 30px 20px;
   }
   #gallery .team div {
+    position: relative;
     text-align: center;
     display: block;
     margin: 30px 20px;
@@ -771,9 +774,12 @@ button:focus {
   }
   #gallery .team div img {
     margin: 0 auto;
-    width: 110px;
+    width: 130px;
     border-radius: 50%;
     padding: 5px 0;
+  }
+  #gallery p:first-of-type {
+    clear: both;
   }
   #gallery h3 {
     margin: 0 auto;
@@ -789,7 +795,11 @@ button:focus {
   }
   #gallery .team div .divider {
     display: block;
-    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     width: 60px;
     height: 3px;
   }
@@ -921,7 +931,7 @@ button:focus {
     display: block;
     margin: 50px 45px;
     width: 350px;
-    height: 246px;
+    height: 390px;
   }
   #gallery .team div img {
     margin: 0 auto;
@@ -958,23 +968,23 @@ button:focus {
   }
   #gallery .team div:nth-of-type(1) {
     margin: 0 auto;
-    width: 300px;
+    width: 100%;
     height: 440px;
   }
   #gallery .team div:nth-of-type(2) {
-    display: inline-block;
+    float: left;
     width: 300px;
   }
   #gallery .team div:nth-of-type(3) {
-    display: inline-block;
+    float: left;
     width: 300px;
   }
   #gallery .team div:nth-of-type(4) {
-    display: inline-block;
+    float: left;
     width: 300px;
   }
   #gallery .team div:nth-of-type(5) {
-    display: inline-block;
+    float: left;
     width: 300px;
   }
 }
@@ -1010,6 +1020,7 @@ button:focus {
   }
   #gallery > p {
     width: 450px;
+    padding: 65px 0 20px 0;
   }
 }
 @media screen and (max-device-width: 700px) {
@@ -1034,11 +1045,11 @@ button:focus {
   }
   #main:last-of-type #wrapper p {
     font-family: RobotoCondensed-Regular;
-    line-height: 50px;
+    line-height: 61px;
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: white;
-    font-size: 31px;
+    font-size: 30px;
   }
   main > #wallpapers > h1 {
     font-size: 71px;
@@ -1049,7 +1060,7 @@ button:focus {
     letter-spacing: 0.7px;
     word-spacing: 2px;
     color: black;
-    font-size: 49px;
+    font-size: 46px;
     width: auto;
     font-weight: none;
   }
@@ -1096,10 +1107,12 @@ button:focus {
     display: none;
   }
   #main > #wrapper > p {
-    width: auto;
-    font-size: 16px;
+    font-family: RobotoCondensed-Regular;
     line-height: 50px;
-    font-weight: 100;
+    letter-spacing: 0.7px;
+    word-spacing: 2px;
+    color: #000;
+    font-size: 30px;
   }
   #landing > img {
     width: 800px;
@@ -1123,7 +1136,7 @@ button:focus {
     font-size: 50px;
   }
   main > #wallpapers > #box > p {
-    font-size: 46px;
+    font-size: 42px;
     line-height: 55px;
   }
   main > #wallpapers > #box > a:first-of-type > button {
@@ -1165,7 +1178,7 @@ button:focus {
     font-family: RobotoCondensed-Regular;
     line-height: 59px;
     color: black;
-    font-size: 37px;
+    font-size: 29px;
     width: 800px;
     font-weight: none;
   }
@@ -1222,5 +1235,20 @@ button:focus {
    }
    #images {
     display: block;
+    margin: 40px 0;
    }
+}
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  text-align: center;
+}
+#loading-screen #loading-img {
+  position: fixed;
+  top: 45%;
+  width: 100%;
+  height: 50%;
+  text-align: center;
 }
