@@ -1066,6 +1066,9 @@ button:focus {
   }
 }
 @media screen and (max-device-width: 650px) {
+  #loading-screen #loading-img img {
+    width: 150px;
+  }
   .divider {
     display: none;
   }
