@@ -1,15 +1,7 @@
 $(window).load(function() {
     var bodyHeight = document.getElementById("body");
     var height = bodyHeight.clientHeight;
-    // var windowHeight = $(window).height();
-    // var w = $(window);
-    // var p = $('.first');
-    // var offset = w.offset();
-    // console.log(offset.left);
-    // console.log(offset.top);
-    // console.log(offset);
-    // console.log(windowHeight);
-    // if (window)
+
     $(window).scroll(function() {
         if ($(this).scrollTop() >= height + 150) {
             console.log(height);
@@ -97,12 +89,6 @@ $(window).load(function() {
         $('.xperia-display-1').click(function() {
             $('#lightbox>div:last').toggleClass('.xperia-display-1 xperia-display-2');
         });
-        // setTimeout(function() {
-        //     $('.xperia-display-1').addClass('screen-flick');
-        //     setTimeout(function() {
-        //         $('.xperia-display-1').removeClass('screen-flick');
-        //     }, 600)
-        // }, 600)
     });
     $('#box:nth-of-type(3)>img').click(function() {
         $('#lightbox').append('<button class="toggle2"></button>');
@@ -172,4 +158,58 @@ $(window).load(function() {
     $('.wallpapers>div:nth-of-type(10)').click(function() {
         $('#lightbox').append('<img class="children"  src="images/child-display-10.jpg" />');
     });
+
+    // ARCHIVES IMAGES
+
+
+    $('.archives-wallpapers>div').click(function() {
+        $('#lightbox').empty();
+        $('#darkness, #lightbox').fadeIn(400);
+    });
+    $('.archives-wallpapers>div:nth-of-type(1)').click(function() {
+        $('#lightbox').append('<img class="children" src="images/img-1.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(2)').click(function() {
+        $('#lightbox').append('<img class="children" src="images/img-2.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(3)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-3.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(4)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-4.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(5)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-5.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(6)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-6.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(7)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-17.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(8)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-8.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(9)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-9.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(10)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-10.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(11)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-11.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(12)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-12.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(13)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-13.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(14)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-14.jpg" />');
+    });
+    $('.archives-wallpapers>div:nth-of-type(15)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-15.jpg" />');
+    });
 });
+

@@ -183,9 +183,9 @@ body {
   left: 3px;
   right: 0;
   margin: auto;
-  width: 402px;
-  height: 686px;
-  background: url("../images/xperia-display-1.png");
+  width: 405px;
+  height: 690px;
+  background: url("../images/wall-galaxy-1.jpg");
   background-size: cover;
   transition: all 0.4s ease;
 }
@@ -197,8 +197,8 @@ body {
   left: 3px;
   right: 0;
   margin: auto;
-  width: 402px;
-  height: 686px;
+  width: 405px;
+  height: 690px;
   background: url("../images/xperia-display-2.png");
   background-size: cover;
   transition: all 0.4s ease;
@@ -231,11 +231,11 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  width: 104px;
-  height: 44px;
+  width: 106px;
+  height: 47px;
   background: #282B34;
   border: none;
-  border-radius: 34%;
+  border-radius: 35%;
   cursor: pointer;
   border: 2px solid #464C58;
   transition: all 0.3s ease;
@@ -269,7 +269,6 @@ body {
 #lightbox button,
 img,
 div {
-  pointer-events: auto;
 }
 .show,
 .hide {
@@ -293,7 +292,7 @@ header img {
 }
 main #wallpapers {
   margin: 0 auto;
-  width: 900px;
+  width: 910px;
   text-align: center;
 }
 main #wallpapers h1 {
@@ -403,6 +402,17 @@ main #wallpapers #box button:hover {
   text-align: center;
   background: #fff;
 }
+#gallery > #margin > #text-container > h1 {
+  margin: 0 auto;
+  padding: 0px 0 5px 0;
+  width: 520px;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+  background: #fff;
+}
 #gallery h1:nth-of-type(2) {
   margin: 0 auto;
   padding: 0px 0 5px 0;
@@ -436,7 +446,7 @@ main #wallpapers #box button:hover {
   color: #000;
   font-size: 17px;
   text-align: center;
-  width: 600px;
+  width: 820px;
 }
 #gallery p:last-of-type {
   padding: 25px 0 40px 0;
@@ -456,6 +466,13 @@ main #wallpapers #box button:hover {
 #gallery .wallpapers {
   position: relative;
   margin: 0 auto;
+  padding: 30px 0;
+  width: 1115px;
+}
+#gallery .archives-wallpapers {
+  position: relative;
+  margin: 0 auto;
+  /*float: left;*/
   padding: 30px 0;
   width: 1115px;
 }
@@ -501,6 +518,13 @@ main #wallpapers #box button:hover {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+#gallery .archives-wallpapers div {
+  display: inline-block;
+  width: 220px;
+  height: 165px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 #images {
   position: relative;
   display: none;
@@ -538,6 +562,16 @@ main #wallpapers #box button:hover {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+#gallery > #margin {
+  margin: 20px 0 40px 0;
+}
+#gallery > #margin > #text-container {
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+  width: 860px;
+  height: 530px;
+  overflow-y: scroll;
 }
 #gallery .wallpapers div:nth-of-type(1) {
   background: url("../images/child-1-red.jpg");
@@ -598,6 +632,102 @@ main #wallpapers #box button:hover {
 }
 #gallery .wallpapers div:nth-of-type(10):hover {
   background: url("../images/child-10.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(1) {
+  background: url("../images/carousel/img-1-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(2) {
+  background: url("../images/carousel/img-2-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(3) {
+  background: url("../images/carousel/img-3-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(4) {
+  background: url("../images/carousel/img-4-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(5) {
+  background: url("../images/carousel/img-5-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(6) {
+  background: url("../images/carousel/img-6-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(7) {
+  background: url("../images/carousel/img-17-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(8) {
+  background: url("../images/carousel/img-8-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(9) {
+  background: url("../images/carousel/img-9-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(10) {
+  background: url("../images/carousel/img-10-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(11) {
+  background: url("../images/carousel/img-11-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(12) {
+  background: url("../images/carousel/img-12-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(13) {
+  background: url("../images/carousel/img-13-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(14) {
+  background: url("../images/carousel/img-14-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(15) {
+  background: url("../images/carousel/img-15-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(16) {
+  background: url("../images/carousel/img-16-red.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(1):hover {
+  background: url("../images/carousel/img-1.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(2):hover {
+  background: url("../images/carousel/img-2.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(3):hover {
+  background: url("../images/carousel/img-3.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(4):hover {
+  background: url("../images/carousel/img-4.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(5):hover {
+  background: url("../images/carousel/img-5.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(6):hover {
+  background: url("../images/carousel/img-6.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(7):hover {
+  background: url("../images/carousel/img-17.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(8):hover {
+  background: url("../images/carousel/img-8.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(9):hover {
+  background: url("../images/carousel/img-9.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(10):hover {
+  background: url("../images/carousel/img-10.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(11):hover {
+  background: url("../images/carousel/img-11.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(12):hover {
+  background: url("../images/carousel/img-12.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(13):hover {
+  background: url("../images/carousel/img-13.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(14):hover {
+  background: url("../images/carousel/img-14.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(15):hover {
+  background: url("../images/carousel/img-15.jpg");
+}
+#gallery .archives-wallpapers div:nth-of-type(16):hover {
+  background: url("../images/carousel/img-16.jpg");
 }
 #gallery:last-of-type #content #wrapper #box:first-of-type {
   margin: 40px 0 20px 0;
@@ -699,13 +829,13 @@ button:focus {
     height: 546px;
   }
   .galaxy-display-1 {
-    width: 317px;
-    height: 526px;
+    width: 319px;
+    height: 528px;
     left: 1px;
   }
   .galaxy-display-2 {
-    width: 317px;
-    height: 526px;
+    width: 319px;
+    height: 528px;
     left: 1px;
   }
   .toggle {
@@ -853,7 +983,7 @@ button:focus {
   #gallery > .wallpapers > div:last-of-type {
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #main > #wrapper {
     width: 560px;
   }
