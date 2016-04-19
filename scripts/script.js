@@ -2,6 +2,37 @@ $(window).load(function() {
     var bodyHeight = document.getElementById("body");
     var height = bodyHeight.clientHeight;
 
+    $("a:nth-of-type(1)>#pick").mouseenter(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        $("a:nth-of-type(1)>#pick>.backdrop").fadeIn(600);
+    });
+    $("a:nth-of-type(1)>#pick").mouseleave(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        $("a:nth-of-type(1)>#pick>.backdrop").fadeOut(600);
+    });
+    $("a:nth-of-type(2)>#pick").mouseenter(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        $("a:nth-of-type(2)>#pick>.backdrop").fadeIn(600);
+    });
+    $("a:nth-of-type(2)>#pick").mouseleave(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        $("a:nth-of-type(2)>#pick>.backdrop").fadeOut(600);
+    });
+    $("a:nth-child(1)").mouseenter(function() {
+        $("a:nth-child(1)>#pick>h4").css("color", "#912735");
+    });
+    $("a:nth-child(2)").mouseenter(function() {
+        $("a:nth-child(2)>#pick>h4").css("color", "#912735");
+    });
+    $("a:nth-child(1)").mouseleave(function() {
+        $("a:nth-child(1)>#pick>h4").css("color", "white");
+        $("a:nth-child(1)>#pick").css("backgroundImage", "none");
+    });
+    $("a:nth-child(2)").mouseleave(function() {
+        $("a:nth-child(2)>#pick>h4").css("color", "white");
+        $("a:nth-child(2)>#pick").css("backgroundImage", "none");
+    });
+
     $(window).scroll(function() {
         if ($(this).scrollTop() >= height + 150) {
             console.log(height);

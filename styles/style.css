@@ -68,7 +68,7 @@ body {
 }
 #navbar {
   margin: 0 auto;
-  width: 600px;
+  width: 620px;
   background: #912735;
   border-radius: 5px;
 }
@@ -185,7 +185,7 @@ body {
   margin: auto;
   width: 405px;
   height: 690px;
-  background: url("../images/wall-galaxy-1.jpg");
+  background: url("../images/galaxy-display-1.jpg");
   background-size: cover;
   transition: all 0.4s ease;
 }
@@ -199,7 +199,7 @@ body {
   margin: auto;
   width: 405px;
   height: 690px;
-  background: url("../images/xperia-display-2.png");
+  background: url("../images/galaxy-display-2.jpg");
   background-size: cover;
   transition: all 0.4s ease;
 }
@@ -269,6 +269,7 @@ body {
 #lightbox button,
 img,
 div {
+  pointer-events: auto;
 }
 .show,
 .hide {
@@ -380,6 +381,17 @@ main #wallpapers #box button:hover {
   background: #fff;
   color: #8d2130;
 }
+#picking h1 {
+  margin: 0 auto;
+  padding: 0px 0 5px 0;
+  width: 320px;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+  background: #fff;
+}
 #gallery h3 {
   margin: 0 auto;
   padding: 0;
@@ -405,7 +417,7 @@ main #wallpapers #box button:hover {
 #gallery > #margin > #text-container > h1 {
   margin: 0 auto;
   padding: 0px 0 5px 0;
-  width: 520px;
+  width: 610px;
   font-family: Sans-Narrow-Regular;
   color: #912735;
   letter-spacing: 2px;
@@ -473,7 +485,7 @@ main #wallpapers #box button:hover {
   position: relative;
   margin: 0 auto;
   /*float: left;*/
-  padding: 30px 0;
+  padding: 20px 0;
   width: 1115px;
 }
 #gallery .team {
@@ -563,6 +575,23 @@ main #wallpapers #box button:hover {
   margin-left: auto;
   margin-right: auto;
 }
+#gallery {
+  width: 1260px;
+}
+#picking {
+}
+#picking > h1 {
+  /*padding: 0px 0 5px 0;*/
+  margin: 0;
+  width: auto;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+  background: #fff;
+  font-size: 35px;
+}
 #gallery > #margin {
   margin: 20px 0 40px 0;
 }
@@ -570,9 +599,24 @@ main #wallpapers #box button:hover {
   margin: 0 auto;
   padding: 20px 0 40px 0;
   width: 860px;
-  height: 530px;
-  overflow-y: scroll;
+  /*height: 530px;*/
+  /*overflow-y: scroll;*/
 }
+#gallery > h2 {
+  /*padding: 0px 0 5px 0;*/
+  margin: 0;
+  width: 325px;
+  font-family: Sans-Narrow-Regular;
+  color: #912735;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+  background: #fff;
+  font-size: 35px;
+}
+/*#gallery > .left-align {
+  text-align: left;
+}*/
 #gallery .wallpapers div:nth-of-type(1) {
   background: url("../images/child-1-red.jpg");
 }
@@ -735,6 +779,91 @@ main #wallpapers #box button:hover {
 #gallery:last-of-type #content #wrapper #box:last-of-type {
   margin: 55px 0 20px 0;
 }
+#picking > #wrapper > a {
+  width: 300px;
+  text-decoration: none;
+}
+#picking > #wrapper {
+  margin: 0 auto;
+  padding: 0 0 45px 0;
+  width: auto;
+  text-align: center;
+}
+#gallery > #wrapper {
+  margin: 0 auto;
+  padding: 40px 0 180px 0;
+  width: 1024px;
+  text-align: center;
+}
+#gallery > #wrapper > a {
+  text-decoration: none;
+}
+#gallery > #wrapper > a > #pick {
+  margin: 0 20px;
+}
+#picking {
+  text-align: center;
+}
+#picking > p {
+  margin: 0 auto;
+  padding: 15px 0 50px 0;
+  width: 700px;
+  font-family: Sans-Narrow-Regular;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  word-spacing: 2px;
+  color: #000;
+  font-size: 18px;
+}
+#pick {
+  display: inline-block;
+  margin: 10px 10px;
+  width: 300px;
+  height: 300px;
+  background: #912735;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.6s ease;
+}
+/*a:nth-of-type(1) > #pick {
+  background: url("../images/about-collage.jpg");
+  border: 2px solid #912735;
+}
+a:nth-of-type(2) > #pick {
+  background: url("../images/collage.jpg");
+  border: 2px solid #912735;
+}*/
+#pick:hover {
+  background: white;
+}
+#pick > h4 {
+  font-family: Sans-Narrow-Regular;
+  color: white;
+  line-height: 180px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  transition: all 0.6s ease;
+}
+a:nth-of-type(1) > #pick > .backdrop {
+  position: relative;
+  display: none;
+  position: absolute;
+  width: 296px;
+  height: 296px;
+  background: url("../images/about-collage.jpg");
+  border: 2px solid #912735;
+  border-radius: 5px;
+}
+a:nth-of-type(2) > #pick > .backdrop {
+  position: relative;
+  display: none;
+  position: absolute;
+  width: 296px;
+  height: 296px;
+  background: url("../images/collage.jpg");
+  border: 2px solid #912735;
+  border-radius: 5px;
+}
 .children {
   z-index: 1000;
   position: fixed;
@@ -790,6 +919,12 @@ footer .fb:hover {
   height: 3px;
   background: #912735;
 }
+.left-divider {
+  margin: 4px 0 0 74px;
+  width: 174px;
+  height: 3px;
+  background: #912735;
+}
 button:focus {
   outline: 0;
 }
@@ -804,6 +939,29 @@ button:focus {
   margin: 0 auto;
   width: 60px;
   height: 3px;
+}
+@media screen and (max-width: 1200px) {
+  #gallery > .archives-wallpapers {
+    width: 950px;
+  }
+  #gallery > h2 {
+    margin: 4px 0;
+    text-align: center;
+    width: auto;
+  }
+  #gallery > .left-divider {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1105px) {
+  #gallery > .archives-wallpapers {
+    width: 675px;
+  }
+}
+@media screen and (max-width: 819px) {
+  #gallery > .archives-wallpapers {
+    width: 675px;
+  }
 }
 @media screen and (max-height: 880px) {
   .large {
@@ -1381,6 +1539,49 @@ button:focus {
     margin: 0 auto;
     width: 750px;
   }
+  #picking > #wrapper {
+    padding: 0;
+  }
+  #picking > h1 {
+    /*width: 800px;*/
+    font-size: 50px;
+  }
+  #gallery > #margin > #text-container > h1 {
+    /*width: 800px;*/
+    font-size: 50px;
+  }
+  #picking > p {
+    width: 870px;
+    font-size: 40px;
+    line-height: 65px;
+    padding: 15px 0 80px 0;
+  }
+  #gallery > #margin > #text-container > p {
+    width: 870px;
+    font-size: 30px;
+    line-height: 65px;
+  }
+  #gallery > h2 {
+    font-size: 81px;
+  }
+  #gallery > .left-divider {
+    display: none;
+  }
+  #picking {
+    padding-top: 50px;
+  }
+  #pick {
+    width: 100%;
+    height: 250px;
+    border-radius: 0;
+    margin: 0;
+  }
+  #pick:first-of-type {
+    border-bottom: 1px solid #a82837;
+  }
+  #pick > h4 {
+    line-height: 163px;
+  }
   #gallery > .wallpapers > div {
     width: 220px;
   }  .large {
@@ -1424,6 +1625,9 @@ button:focus {
      bottom: -1028px;
      width: 157px;
      height: 63px;
+   }
+   .archives-wallpapers {
+    display: none;
    }
    .wallpapers {
     display: none;
