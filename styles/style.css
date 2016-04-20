@@ -53,7 +53,7 @@ body {
 }
 #main:last-of-type {
   background: #912735;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 110px 0;
 }
 #main:last-of-type p,
 #main:last-of-type h1 {
@@ -293,6 +293,7 @@ header img {
 }
 main #wallpapers {
   margin: 0 auto;
+  padding-bottom: 80px;
   width: 910px;
   text-align: center;
 }
@@ -376,6 +377,23 @@ main #wallpapers #box button {
   transition: all 0.4s ease;
   cursor: pointer;
   letter-spacing: 2px;
+}
+#gallery > #margin > #text-container > a > button {
+  font-family: Sans-Narrow-Bold;
+  background: #8d2130;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #8d2130;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+#gallery > #margin > #text-container > a > button:hover {
+  background: #fff;
+  color: #8d2130;
 }
 main #wallpapers #box button:hover {
   background: #fff;
@@ -461,7 +479,7 @@ main #wallpapers #box button:hover {
   width: 820px;
 }
 #gallery p:last-of-type {
-  padding: 25px 0 40px 0;
+  padding: 25px 0 30px 0;
 }
 #gallery .class-first {
   /*display: none;*/
@@ -485,7 +503,7 @@ main #wallpapers #box button:hover {
   position: relative;
   margin: 0 auto;
   /*float: left;*/
-  padding: 20px 0;
+  padding: 20px 0 120px 0;
   width: 1115px;
 }
 #gallery .team {
@@ -548,6 +566,7 @@ main #wallpapers #box button:hover {
 }
 .logo {
   display: none;
+  padding-bottom: 70px;
   margin: 0 auto;
   width: 500px;
   height: 300px;
@@ -576,7 +595,12 @@ main #wallpapers #box button:hover {
   margin-right: auto;
 }
 #gallery {
+  /*padding-bottom: 100px;*/
+  margin: 0 auto;
   width: 1260px;
+}
+body > #gallery > .bottom-padding {
+  padding-bottom: 120px;
 }
 #picking {
 }
@@ -597,8 +621,9 @@ main #wallpapers #box button:hover {
 }
 #gallery > #margin > #text-container {
   margin: 0 auto;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 100px 0;
   width: 860px;
+  text-align: center;
   /*height: 530px;*/
   /*overflow-y: scroll;*/
 }
@@ -785,7 +810,7 @@ main #wallpapers #box button:hover {
 }
 #picking > #wrapper {
   margin: 0 auto;
-  padding: 0 0 45px 0;
+  padding: 0 0 120px 0;
   width: auto;
   text-align: center;
 }
@@ -875,11 +900,12 @@ a:nth-of-type(2) > #pick > .backdrop {
   border-radius: 10px;
 }
 footer {
+  position: relative;
   clear: both;
   padding: 0 0 20px 0;
   width: 100%;
-  background: #912735;
-  height: 70px;
+  background: #8d2130;
+  height: 40px;
   text-align: center;
 }
 footer a {
@@ -888,12 +914,31 @@ footer a {
 }
 footer .fb {
   margin: 0 auto;
-  padding: 18px 0 0 0;
+  /*padding: 18px 0 0 0;*/
   cursor: pointer;
   transition: all 0.3s ease;
 }
 footer .fb:hover {
   opacity: 0.3;
+}
+footer > img {
+  z-index: 1;
+  position: absolute;
+  width: 125px;
+  bottom: 33px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer > a > img {
+  z-index: 1108;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .main-divider {
   margin: 0 auto;
@@ -939,6 +984,25 @@ button:focus {
   margin: 0 auto;
   width: 60px;
   height: 3px;
+}
+footer > .sponsors-left {
+  position: absolute;
+  bottom: 70px;
+}
+footer > .sponsors-left > a {
+  text-decoration: none;
+}
+footer > .sponsors-left > a > img {
+  margin: 0 20px;
+  width: 150px;
+}
+footer > .sponsors-right {
+  position: absolute;
+  right: 20px;
+  bottom: 60px;
+}
+footer > .sponsors-right > img {
+  width: 350px;
 }
 @media screen and (max-width: 1200px) {
   #gallery > .archives-wallpapers {
@@ -1311,6 +1375,7 @@ button:focus {
   .logo > img {
     position: absolute;
     width: 740px;
+    bottom: 300px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -1376,6 +1441,12 @@ button:focus {
 @media screen and (max-device-width: 700px) {
   #landing > img {
     width: 360px;
+  }
+  footer {
+    padding-top: 13px;
+  }
+  footer > .triangle {
+    display: none;
   }
 }
 @media screen and (max-device-width: 450px) {
@@ -1475,7 +1546,7 @@ button:focus {
     height: auto;
   }
   main > #wallpapers > #box:last-of-type {
-    margin: 50px 0 70px 22px;
+    margin: 50px 0 120px 22px;
     height: auto;
   }
   main > #wallpapers > #box > img {
@@ -1508,7 +1579,20 @@ button:focus {
     padding: 25px 70px;
     font-size: 50px;
   }
+  #main:last-of-type {
+    margin-bottom: 150px;
+    padding: 20px 0 10px 0;
+  }
+  body > #gallery > .bottom-padding {
+    padding-bottom: 160px;
+  }
+  #gallery > #margin > #text-container > a > button {
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 50px;
+  }
   #gallery {
+    padding-bottom: 10px;
     width: 100%;
   }
   #gallery > h1:nth-of-type(1) {
@@ -1567,6 +1651,17 @@ button:focus {
   #gallery > .left-divider {
     display: none;
   }
+  footer > .sponsors-left {
+    margin: 0 0 10px 10px;
+    padding: 3px 0;
+    background: white;
+  }
+  footer > .sponsors-left > a > img {
+    width: 280px;
+  }
+  footer > .sponsors-right {
+    display: none;
+  }
   #picking {
     padding-top: 50px;
   }
@@ -1577,6 +1672,10 @@ button:focus {
     margin: 0;
   }
   #pick:first-of-type {
+    border-bottom: 1px solid #a82837;
+  }
+  a:last-of-type > #pick {
+    margin-bottom: 150px;
     border-bottom: 1px solid #a82837;
   }
   #pick > h4 {

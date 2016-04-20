@@ -35,11 +35,11 @@ $(window).load(function() {
 
     $(window).scroll(function() {
         if ($(this).scrollTop() >= height + 150) {
-            console.log(height);
+            // console.log(height);
             $('.class-third').fadeIn(1000);
         }
         if ($(this).scrollTop() >= height + 472) {
-            console.log(height);
+            // console.log(height);
             $('.class-fourth, .logo').fadeIn(1000);
         }
     });
