@@ -53,6 +53,7 @@ body {
 }
 #main:last-of-type {
   background: #912735;
+  margin-bottom: 120px;
   padding: 20px 0 110px 0;
 }
 #main:last-of-type p,
