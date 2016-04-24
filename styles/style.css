@@ -504,8 +504,16 @@ main #wallpapers #box button:hover {
   position: relative;
   margin: 0 auto;
   /*float: left;*/
-  padding: 20px 0 120px 0;
+  padding: 20px 0 140px 0;
   width: 1115px;
+}
+#gallery .archives-wallpapers-2 {
+  position: relative;
+  margin: 0 auto;
+  /*float: left;*/
+  padding: 20px 0 20px 0;
+  width: 1115px;
+  height: 745px;
 }
 #gallery .team {
   position: relative;
@@ -556,12 +564,28 @@ main #wallpapers #box button:hover {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+#gallery .archives-wallpapers-2 div {
+  display: inline-block;
+  width: 220px;
+  height: 165px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 #images {
   position: relative;
   display: none;
   width: 100%;
 }
+#images-2 {
+  position: relative;
+  display: none;
+  width: 100%;
+}
 #images img {
+  display: block;
+  width: 100%;
+}
+#images-2 img {
   display: block;
   width: 100%;
 }
@@ -601,7 +625,10 @@ main #wallpapers #box button:hover {
   width: 1260px;
 }
 body > #gallery > .bottom-padding {
-  padding-bottom: 120px;
+  padding-bottom: 50px;
+}
+body > #gallery > .bottom-padding-2 {
+  padding-bottom: 140px;
 }
 #picking {
 }
@@ -751,6 +778,66 @@ body > #gallery > .bottom-padding {
 #gallery .archives-wallpapers div:nth-of-type(16) {
   background: url("../images/carousel/img-16-red.jpg");
 }
+#gallery .archives-wallpapers-2 div:nth-of-type(1) {
+  background: url("../images/carousel-2/img-1-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(2) {
+  background: url("../images/carousel-2/img-2-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(3) {
+  background: url("../images/carousel-2/img-3-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(4) {
+  background: url("../images/carousel-2/img-4-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(5) {
+  background: url("../images/carousel-2/img-5-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(6) {
+  background: url("../images/carousel-2/img-6-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(7) {
+  background: url("../images/carousel-2/img-17-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(8) {
+  background: url("../images/carousel-2/img-8-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(9) {
+  background: url("../images/carousel-2/img-9-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(10) {
+  background: url("../images/carousel-2/img-10-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(11) {
+  background: url("../images/carousel-2/img-11-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(12) {
+  background: url("../images/carousel-2/img-12-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(13) {
+  background: url("../images/carousel-2/img-13-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(14) {
+  background: url("../images/carousel-2/img-14-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(15) {
+  background: url("../images/carousel-2/img-15-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(16) {
+  background: url("../images/carousel-2/img-16-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(17) {
+  background: url("../images/carousel-2/img-17-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(18) {
+  background: url("../images/carousel-2/img-18-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(19) {
+  background: url("../images/carousel-2/img-19-red.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(20) {
+  background: url("../images/carousel-2/img-20-red.jpg");
+}
 #gallery .archives-wallpapers div:nth-of-type(1):hover {
   background: url("../images/carousel/img-1.jpg");
 }
@@ -799,6 +886,66 @@ body > #gallery > .bottom-padding {
 #gallery .archives-wallpapers div:nth-of-type(16):hover {
   background: url("../images/carousel/img-16.jpg");
 }
+#gallery .archives-wallpapers-2 div:nth-of-type(1):hover {
+  background: url("../images/carousel-2/img-1.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(2):hover {
+  background: url("../images/carousel-2/img-2.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(3):hover {
+  background: url("../images/carousel-2/img-3.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(4):hover {
+  background: url("../images/carousel-2/img-4.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(5):hover {
+  background: url("../images/carousel-2/img-5.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(6):hover {
+  background: url("../images/carousel-2/img-6.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(7):hover {
+  background: url("../images/carousel-2/img-17.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(8):hover {
+  background: url("../images/carousel-2/img-8.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(9):hover {
+  background: url("../images/carousel-2/img-9.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(10):hover {
+  background: url("../images/carousel-2/img-10.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(11):hover {
+  background: url("../images/carousel-2/img-11.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(12):hover {
+  background: url("../images/carousel-2/img-12.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(13):hover {
+  background: url("../images/carousel-2/img-13.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(14):hover {
+  background: url("../images/carousel-2/img-14.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(15):hover {
+  background: url("../images/carousel-2/img-15.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(16):hover {
+  background: url("../images/carousel-2/img-16.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(17):hover {
+  background: url("../images/carousel-2/img-17.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(18):hover {
+  background: url("../images/carousel-2/img-18.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(19):hover {
+  background: url("../images/carousel-2/img-19.jpg");
+}
+#gallery .archives-wallpapers-2 div:nth-of-type(20):hover {
+  background: url("../images/carousel-2/img-20.jpg");
+}
 #gallery:last-of-type #content #wrapper #box:first-of-type {
   margin: 40px 0 20px 0;
 }
@@ -809,11 +956,17 @@ body > #gallery > .bottom-padding {
   width: 300px;
   text-decoration: none;
 }
-#picking > #wrapper {
+#picking > #wrapper-1 {
   margin: 0 auto;
   padding: 0 0 120px 0;
   width: auto;
   text-align: center;
+}
+#picking > #wrapper-2 {
+    margin: 0 auto;
+    padding: 0 0 120px 0;
+    width: auto;
+    text-align: center;
 }
 #gallery > #wrapper {
   margin: 0 auto;
@@ -850,6 +1003,17 @@ body > #gallery > .bottom-padding {
   border-radius: 5px;
   text-align: center;
   transition: all 0.6s ease;
+}
+body > #gallery > .padding-top {
+  padding-top: 50px;
+  width: auto;
+}
+body > #gallery > .padding-bottom {
+  padding-bottom: 130px;
+}
+#position-bottom {
+  position: fixed;
+  bottom: 0;
 }
 /*a:nth-of-type(1) > #pick {
   background: url("../images/about-collage.jpg");
@@ -1009,6 +1173,10 @@ footer > .sponsors-right > img {
   #gallery > .archives-wallpapers {
     width: 950px;
   }
+  #gallery > .archives-wallpapers-2 {
+    width: 950px;
+    display: none;
+  }
   #gallery > h2 {
     margin: 4px 0;
     text-align: center;
@@ -1022,9 +1190,16 @@ footer > .sponsors-right > img {
   #gallery > .archives-wallpapers {
     width: 675px;
   }
+  #gallery > .archives-wallpapers-2 {
+    width: 675px;
+    height: 1250px;
+  }
 }
 @media screen and (max-width: 819px) {
   #gallery > .archives-wallpapers {
+    width: 675px;
+  }
+  #gallery > .archives-wallpapers-2 {
     width: 675px;
   }
 }
@@ -1285,6 +1460,30 @@ footer > .sponsors-right > img {
     width: 500px;
   }
 }
+@media screen and (max-width: 1215px) {
+  footer > .sponsors-left > a > img {
+    width: 130px;
+  }
+  .position-bottom > .sponsors-left > a > img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  footer > .sponsors-left > a > img {
+    width: 120px;
+  }
+  .position-bottom > .sponsors-left > a > img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 1018px) {
+  footer > .sponsors-left > a > img {
+    width: 100px;
+  }
+  .position-bottom > .sponsors-left > a > img {
+    width: 100px;
+  }
+}
 @media screen and (max-device-width: 1145px) {
   #gallery .team div:nth-of-type(2) img {
     /*position: relative;*/
@@ -1488,6 +1687,9 @@ footer > .sponsors-right > img {
   }
 }
 @media screen and (max-device-width: 650px) {
+  #position-bottom {
+    position: relative;
+  }
   #loading-screen #loading-img img {
     width: 150px;
   }
@@ -1733,6 +1935,10 @@ footer > .sponsors-right > img {
     display: none;
    }
    #images {
+    display: block;
+    margin: 40px 0;
+   }
+   #images-2 {
     display: block;
     margin: 40px 0;
    }

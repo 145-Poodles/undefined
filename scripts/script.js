@@ -2,21 +2,37 @@ $(window).load(function() {
     var bodyHeight = document.getElementById("body");
     var height = bodyHeight.clientHeight;
 
-    $("a:nth-of-type(1)>#pick").mouseenter(function() {
+    $("#wrapper-1>a:nth-of-type(1)>#pick").mouseenter(function() {
         // $("a:nth-of-type(1)>#pick").fadeOut(600);
         $("a:nth-of-type(1)>#pick>.backdrop").fadeIn(600);
     });
-    $("a:nth-of-type(1)>#pick").mouseleave(function() {
+    $("#wrapper-1>a:nth-of-type(1)>#pick").mouseleave(function() {
         // $("a:nth-of-type(1)>#pick").fadeOut(600);
         $("a:nth-of-type(1)>#pick>.backdrop").fadeOut(600);
     });
-    $("a:nth-of-type(2)>#pick").mouseenter(function() {
+    $("#wrapper-1>a:nth-of-type(2)>#pick").mouseenter(function() {
         // $("a:nth-of-type(1)>#pick").fadeOut(600);
         $("a:nth-of-type(2)>#pick>.backdrop").fadeIn(600);
     });
-    $("a:nth-of-type(2)>#pick").mouseleave(function() {
+    $("#wrapper-1>a:nth-of-type(2)>#pick").mouseleave(function() {
         // $("a:nth-of-type(1)>#pick").fadeOut(600);
         $("a:nth-of-type(2)>#pick>.backdrop").fadeOut(600);
+    });
+    $("#wrapper-2>a:nth-of-type(1)>#pick").mouseenter(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        // $("a:nth-of-type(1)>#pick>.backdrop").fadeIn(600);
+    });
+    $("#wrapper-2>a:nth-of-type(1)>#pick").mouseleave(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        // $("a:nth-of-type(1)>#pick>.backdrop").fadeOut(600);
+    });
+    $("#wrapper-2>a:nth-of-type(2)>#pick").mouseenter(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        // $("a:nth-of-type(2)>#pick>.backdrop").fadeIn(600);
+    });
+    $("#wrapper-2>a:nth-of-type(2)>#pick").mouseleave(function() {
+        // $("a:nth-of-type(1)>#pick").fadeOut(600);
+        // $("a:nth-of-type(2)>#pick>.backdrop").fadeOut(600);
     });
     $("a:nth-child(1)").mouseenter(function() {
         $("a:nth-child(1)>#pick>h4").css("color", "#912735");
@@ -192,7 +208,6 @@ $(window).load(function() {
 
     // ARCHIVES IMAGES
 
-
     $('.archives-wallpapers>div').click(function() {
         $('#lightbox').empty();
         $('#darkness, #lightbox').fadeIn(400);
@@ -241,6 +256,71 @@ $(window).load(function() {
     });
     $('.archives-wallpapers>div:nth-of-type(15)').click(function() {
         $('#lightbox').append('<img class="children"  src="images/img-15.jpg" />');
+    });
+
+    $('.archives-wallpapers-2>div').click(function() {
+        $('#lightbox').empty();
+        $('#darkness, #lightbox').fadeIn(400);
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(1)').click(function() {
+        $('#lightbox').append('<img class="children" src="images/img-001.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(2)').click(function() {
+        $('#lightbox').append('<img class="children" src="images/img-002.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(3)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-003.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(4)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-004.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(5)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-005.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(6)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-006.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(7)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-007.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(8)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-008.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(9)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-009.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(10)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-010.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(11)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-011.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(12)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-012.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(13)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-013.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(14)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-014.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(15)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-015.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(16)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-016.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(17)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-017.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(18)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-018.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(19)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-019.jpg" />');
+    });
+    $('.archives-wallpapers-2>div:nth-of-type(20)').click(function() {
+        $('#lightbox').append('<img class="children"  src="images/img-020.jpg" />');
     });
 });
 
